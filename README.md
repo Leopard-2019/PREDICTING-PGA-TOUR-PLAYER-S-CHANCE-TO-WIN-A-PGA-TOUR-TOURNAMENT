@@ -81,7 +81,7 @@ A correlation matrix was generated in order to explore how the variables correla
 </p>
 </div>
 
-More insight into the dataset can be gained before finalizing the data preparation by doing the histograms for all the independent variables as shown on Figure 8.
+More insight into the dataset can be gained before finalizing the data preparation by showing the value distribution for all the independent variables as shown on Figure 8. As it can be observed, all of them show a quite nice normal distribution.
 
 </br>
 <p align="center">
