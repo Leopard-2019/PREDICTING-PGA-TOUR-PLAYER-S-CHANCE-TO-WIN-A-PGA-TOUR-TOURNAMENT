@@ -71,3 +71,12 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 </p>
 </div>
 
+A correlation matrix was generated in order to explore how the variables correlated each other, i.e., potentially helping to reduced the number of independent variables that will be finally used. The results are shown on Figure 7, indicating that there a number of independent variables that correlate each other as follow: 
+
+
+</br>
+<p align="center">
+<img src="images/CapstoneProj_matrixcorrelation.jpeg" width="500px" height="500px">
+<h4 align="center"> Figure 6</h4>
+</p>
+</div>
