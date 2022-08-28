@@ -26,4 +26,4 @@ The Business goal is  to come up with a supervized machine learning classificati
 </p>
 
 <h2>Data Understanding</h2>
-As mentioned before, the dataset was scraped from the offical webiste of the PGA Tour, covering only ten years span of turnament (2011-2021) in this particular case. it consists of 27 columns and 4122 rows as shown below. The target/independent columns is "Win" which is binary. This variable is imbalance as will be later be seen. All the independent variables are numerical. After dropping the "NaN" values, the dataset was reduced to 27 columns and  3380 rows. Duplicates were not observed.
+As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it consists of 27 columns and 4122 rows as shown below. The target/independent columns is "Win" which is binary (o and 1). This variable is imbalanced as will be seen later. All the independent variables are numerical. After dropping the "NaN" values, the dataset was reduced to 27 columns and  3380 rows. Duplicates were not observed.
