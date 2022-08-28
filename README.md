@@ -86,6 +86,6 @@ More insight into the dataset can be gained before finalizing the data preparati
 </br>
 <p align="center">
 <img src="images/CaptsoneProj_distindepvaria_1.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 7</h4>
+<h4 align="center"> Figure 8</h4>
 </p>
 </div>
