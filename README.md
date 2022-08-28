@@ -77,6 +77,6 @@ A correlation matrix was generated in order to explore how the variables correla
 </br>
 <p align="center">
 <img src="images/CapstoneProj_matrixcorrelation.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 6</h4>
+<h4 align="center"> Figure 7</h4>
 </p>
 </div>
