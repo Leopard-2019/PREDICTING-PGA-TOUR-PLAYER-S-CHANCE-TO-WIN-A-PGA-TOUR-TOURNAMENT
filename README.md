@@ -2,7 +2,7 @@
 <img src="images/Capstone_proj_logo.jpeg" alt="isolated"  width="200px" align="right">
 <h1> PREDICTING PGA TOUR PLAYER'S CHANCE TO WIN A PGA TOUR-TOURNAMENT</h1>
 <p text-align= "right">
-This python application using jupyter notebook predicts the chance of any pga tour player to win a tournamet using Logistic Regression as supervized machine learning algorithm.
+This python application using jupyter notebook predicts the chance of any pga tour player to win a tournamet using Logistic Regression as a supervized machine learning algorithm.
 </p>
 </div>
 
