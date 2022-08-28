@@ -4,4 +4,4 @@
 </div>
 
 
-<img src="images/Figure1_CRISP_DM_Model.jpeg" alt="images/Figure1_CRISP_DM_Model.jpeg" style="border: 3px solid red" />
+<img src="images/Figure1_CRISP_DM_Model.jpeg" alt="Figure1_CRISP_DM_Model.jpeg" style="border: 3px solid red" />
