@@ -66,7 +66,7 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 
 </br>
 <p align="center">
-<img src="images/Capstone_proj_info_1.jpeg" width="900px" height="500px">
+<img src="images/Capstone_proj_info_1.jpeg" width="700px" height="500px">
 <h4 align="center"> Figure 3</h4>
 </p>
 </div>
