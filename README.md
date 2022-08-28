@@ -7,6 +7,6 @@ The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 </br>
 </br>
 <p align="center" object-position= right top>
-<img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
+<img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px" class="w3-circle">
 <h4 align="center"> Figure 1</h4>
 </p>
