@@ -51,14 +51,14 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 </br>
 </br>
 <p align="center">
-<img src="images/Capstone_proj_reset.jpeg" width="1200px" height="100px">
+<img src="images/Capstone_proj_reset.jpeg" width="1200px" height="300px">
 <h4 align="center"> Figure 3</h4>
 </p>
 </div>
 
 </br>
 <p align="center">
-<img src="images/Capstone_proj_nulls.jpeg" width="800px"  height="400px">
+<img src="images/Capstone_proj_nulls.jpeg" width="900px"  height="500px">
 <h4 align="center"> Figure 3</h4>
 </p>
 </div>
@@ -66,14 +66,14 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 
 </br>
 <p align="center">
-<img src="images/Capstone_proj_info_1.jpeg" width="500px" height="500px">
+<img src="images/Capstone_proj_info_1.jpeg" width="5900px" height="500px">
 <h4 align="center"> Figure 3</h4>
 </p>
 </div>
 
 </br>
 <p align="center">
-<img src="images/capstone_proj_head_2.jpeg" width="500px" height="500px">
+<img src="images/capstone_proj_head_2.jpeg" width="900px" height="500px">
 <h4 align="center"> Figure 3</h4>
 </p>
 </div>
