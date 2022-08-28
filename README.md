@@ -6,6 +6,7 @@ This python application using jupyter notebook predicts the chance of any pga to
 </p>
 </div>
 
+<div>
 </br>
 The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 
@@ -15,6 +16,8 @@ The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 <img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
 <h4 align="center"> Figure 1</h4>
 </p>
+
+</div>
 
 <h2>Business Understanding</h2>
 <p text-align-last="start">
