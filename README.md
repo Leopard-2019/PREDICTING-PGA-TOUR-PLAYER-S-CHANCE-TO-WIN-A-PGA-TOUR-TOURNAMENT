@@ -9,5 +9,5 @@
 img[src*="#thumbnail"] {
    width:150px;
    height:100px;
-   border-radius:50%
+   border-radius:10px
 }
