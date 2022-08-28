@@ -4,18 +4,9 @@
 </div>
 
 
-
-<style>
-	.image-rounded {
-		border-radius: 4px;
-		display: inline-block;
-	}
-	
-	img {
-		visibility: hidden;
-	}
-</style>
-
-<span class="image-rounded" style="background: [url] no-repeat 0 0;">
-	<img src="images/Figure1_CRISP_DM_Model.jpeg" />
-</span>
+img[src="images/Figure1_CRISP_DM_Model.jpeg" width="300px"] {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 50%;
+}
