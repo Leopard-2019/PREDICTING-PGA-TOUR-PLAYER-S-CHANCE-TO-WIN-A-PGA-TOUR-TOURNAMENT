@@ -46,20 +46,20 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 
 
 <h2>Data Preparation</h2>
-All the independent variables are numerical. Before cleaning the dataset, the index was reset, and the column: 'PLAYER NAME' was dropped (see Figure 4), since it is not needed for the upcoming analysis. The null values were identified, and dropped as shown on Figures 5 and 6. The dataset was reduced to 27 columns and  3380 rows as shown on Figure 7. Duplicates were not observed.
+All the independent variables are numerical. Before cleaning the dataset, the index was reset, and the column: 'PLAYER NAME' was dropped (see Figure 4), since it won't be needed for further analysis. The null values were identified shown on Figures 5, and dropped. The dataset was reduced to 27 columns and  3380 rows as shown on Figure 6. Duplicates were not observed.
 
 </br>
 </br>
 <p align="center">
 <img src="images/Capstone_proj_reset.jpeg" width="1000px" height="200px">
-<h4 align="center"> Figure 3</h4>
+<h4 align="center"> Figure 4</h4>
 </p>
 </div>
 
 </br>
 <p align="center">
 <img src="images/Capstone_proj_nulls.jpeg" width="900px"  height="500px">
-<h4 align="center"> Figure 3</h4>
+<h4 align="center"> Figure 5</h4>
 </p>
 </div>
 
@@ -67,13 +67,13 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 </br>
 <p align="center">
 <img src="images/Capstone_proj_info_1.jpeg" width="600px" height="500px">
-<h4 align="center"> Figure 3</h4>
+<h4 align="center"> Figure 6</h4>
 </p>
 </div>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_head_2.jpeg" width="900px" height="500px">
-<h4 align="center"> Figure 3</h4>
+<h4 align="center"> Figure 6</h4>
 </p>
 </div>
