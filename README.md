@@ -30,14 +30,14 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 
 </br>
 <p align="center">
-<img src="images/" width="300px" height="300px">
+<img src="images/Capstone_proj_info_1.jpeg" width="300px" height="300px">
 <h4 align="center"> Figure 1</h4>
 </p>
 </div>
 
 </br>
 <p align="center">
-<img src="images/" width="300px" height="300px">
+<img src="images/CapstoneProj_info_2.jpeg" width="300px" height="300px">
 <h4 align="center"> Figure 1</h4>
 </p>
 </div>
