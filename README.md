@@ -1,3 +1,4 @@
+<div>
 <h1 style='color:blue;font-size:18px;text-align: center;'>
  PREDICTING PGA TOUR PLAYER'S CHANCE TO WIN A PGA TOUR-TOURNAMENT
 <p align="right">
@@ -5,3 +6,4 @@
 <h4 align="center"> Figure 1</h4>
 </p>
 </h1>
+</div>
