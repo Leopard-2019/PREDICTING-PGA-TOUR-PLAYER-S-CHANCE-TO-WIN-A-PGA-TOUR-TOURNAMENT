@@ -80,3 +80,12 @@ A correlation matrix was generated in order to explore how the variables correla
 <h4 align="center"> Figure 7</h4>
 </p>
 </div>
+
+More insight into the dataset can be gained before finalizing the data preparation by doing the histograms for all the independent variables as shown on Figure 8.
+
+</br>
+<p align="center">
+<img src="images/CaptsoneProj_distindepvaria_1.jpeg" width="900px" height="800px">
+<h4 align="center"> Figure 7</h4>
+</p>
+</div>
