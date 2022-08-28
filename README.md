@@ -4,5 +4,7 @@
 </div>
 
 
-![Kitten](images/Figure1_CRISP_DM_Model.jpeg#thumbnail){: width=150 height=100 style="float:right; padding:16px"} 
+<div style="width:150px; height:100px">
+![Kitten](images/Figure1_CRISP_DM_Model.jpeg#thumbnail)
+</div>
 
