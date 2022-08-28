@@ -39,7 +39,7 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 </br>
 </br>
 <p align="center">
-<img src="images/Capstone_proj_head-1.jpeg" width="800px" height="500px">
+<img src="images/Capstone_proj_head-1.jpeg" width="900px" height="500px">
 <h4 align="center"> Figure 2</h4>
 </p>
 </div>
