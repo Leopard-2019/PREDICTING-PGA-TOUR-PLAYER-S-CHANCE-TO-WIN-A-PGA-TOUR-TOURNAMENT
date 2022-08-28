@@ -71,7 +71,7 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 </p>
 </div>
 
-A correlation matrix was generated in order to explore how the variables correlated each other, i.e., potentially helping to reduced the number of independent variables that will be finally used. The results are shown on Figure 7, indicating that there a number of independent variables that correlate each other as follow: 
+A correlation matrix was generated in order to explore how the variables correlated each other, i.e., potentially helping to reduced the number of independent variables that will be finally used. The results are shown on Figure 7, indicating that there a number of independent variables are highly positive correlated between each other: 'Club Head Speed_AVG.' and 'Ball Speed_AVG.', 'Carry Distance_AVG.' and 'Ball Speed_AVG.,'SG: Around-the-Green_TOTAL SG:ARG' and 'SG: Tee-to-Green_SG:APR', 'SG: Off-the-Tee_TOTAL SG:OTT' and 'SG: Tee-to-Green_AVERAGE','SG: Approach the Green_TOTAL SG:APP' and 'SG: Tee-to-Green_SG:APR','SG: Off-the-Tee_TOTAL SG:OTT' and 'SG: Tee-to-Green_SG:OTT','SG: Tee-to-Green_SG:ARG' and 'SG: Approach the Green_TOTAL SG:APP', 'SG: Around-the-Green_TOTAL SG:ARG ' and 'SG: Tee-to-Green_SG:APR'
 
 
 </br>
