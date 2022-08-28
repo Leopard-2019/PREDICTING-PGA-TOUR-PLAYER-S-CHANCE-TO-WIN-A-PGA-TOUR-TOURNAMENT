@@ -10,3 +10,5 @@ img[src="images/Figure1_CRISP_DM_Model.jpeg" width="300px"] {
   border-radius: 50%;
   max-width: 50%;
 }
+
+![Block image](src="images/Figure1_CRISP_DM_Model.jpeg" width="300px")
