@@ -7,7 +7,8 @@ This python application using jupyter notebook predicts the chance of any pga to
 </div>
 
 </br>
-
+</br>
+</br>
 <div>
   <p>The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.</p>
 
