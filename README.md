@@ -4,10 +4,9 @@
 </div>
 
 
-img[src="images/Figure1_CRISP_DM_Model.jpeg" width="300px"] {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  max-width: 50%;
-}
+![Kitten](images/Figure1_CRISP_DM_Model.jpeg#thumbnail) 
 
+img[src*="#thumbnail"] {
+   width:150px;
+   height:100px;
+}
