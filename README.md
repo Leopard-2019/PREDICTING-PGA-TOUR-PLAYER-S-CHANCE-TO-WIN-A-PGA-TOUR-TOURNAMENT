@@ -11,4 +11,3 @@ img[src="images/Figure1_CRISP_DM_Model.jpeg" width="300px"] {
   max-width: 50%;
 }
 
-![Block image](src="images/Figure1_CRISP_DM_Model.jpeg" width="300px")
