@@ -26,7 +26,7 @@ The Business goal is  to come up with a supervized machine learning classificati
 </p>
 
 <h2>Data Understanding</h2>
-As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it consists of 27 columns and 4122 rows as shown on Figure 2. The target/independent columns is "Win" which is binary (o and 1). This variable is imbalanced as will be seen later. 
+As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it consists of 27 columns and 4122 rows as shown on Figure 2. The target/independent columns is "Win" which is binary (0 and 1). This variable is imbalanced as will be seen later. 
 
 </br>
 </br>
@@ -40,17 +40,39 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 </br>
 <p align="center">
 <img src="images/Capstone_proj_head-1.jpeg" width="900px" height="500px">
-<h4 align="center"> Figure 2</h4>
+<h4 align="center"> Figure 3</h4>
 </p>
 </div>
 
 
 <h2>Data Preparation</h2>
-All the independent variables are numerical. After dropping the "NaN" values, the dataset was reduced to 27 columns and  3380 rows as shown on Figure 3.. Duplicates were not observed.
+All the independent variables are numerical. Before cleaning the dataset, the index was reset, and the column: 'PLAYER NAME' was dropped (see Figure 4), since it is not needed for the upcoming analysis. The null values were identified, and dropped as shown on Figures 5 and 6. The dataset was reduced to 27 columns and  3380 rows as shown on Figure 7. Duplicates were not observed.
+
+</br>
+<p align="center">
+<img src="images/Capstone_proj_reset.jpeg" width="500px" height="500px">
+<h4 align="center"> Figure 3</h4>
+</p>
+</div>
+
+</br>
+<p align="center">
+<img src="images/Capstone_proj_nulls.jpeg" width="500px" height="500px">
+<h4 align="center"> Figure 3</h4>
+</p>
+</div>
+
 
 </br>
 <p align="center">
 <img src="images/Capstone_proj_info_1.jpeg" width="500px" height="500px">
+<h4 align="center"> Figure 3</h4>
+</p>
+</div>
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_head_2.jpeg" width="500px" height="500px">
 <h4 align="center"> Figure 3</h4>
 </p>
 </div>
