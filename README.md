@@ -96,7 +96,7 @@ A correlation matrix was generated in order to explore how the variables correla
 </div>
 
 <p text-align-last="start">
-More insight into the dataset can be gained before finalizing the data preparation by showing the values distribution for all the independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present.
+More insight into the dataset can be gained before finalizing the data preparation by showing the values distribution for all the independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present. Also, the statistical summary of the final independent variable is shown on Figure 10.
 </p>
 
 </br>
@@ -106,26 +106,34 @@ More insight into the dataset can be gained before finalizing the data preparati
 </p>
 </div>
 
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_stats.jpeg" width="900px" height="800px">
+<h4 align="center"> Figure 10</h4>
+</p>
+</div>
+
 <p text-align-last="start">
-The target column, i.e., the dependent variables: "Win" is binary (0=did not win and 1= won), and clearly imbalaced. it is important to point out that in this analisis 'Win' means a player/players ranked 1st after 4 rounds in a PGA tournament (see Figure 10). Therefore, the playoffs results when players ended up in a tie after final round are not included. In total, there were 831 unique players whom competed from 2011-2021 as shown on Figure 11, i.e, there were many who did compete several times during the aforementioned period.
+The target column, i.e., the dependent variables: "Win" is binary (0=did not win and 1= won), and clearly imbalaced. it is important to point out that in this analisis 'Win' means a player/players ranked 1st after 4 rounds in a PGA tournament (see Figure 11). Therefore, the playoffs results when players ended up in a tie after final round are not included. In total, there were 831 unique players whom competed from 2011-2021 as shown on Figure 12, i.e, there were many who did compete several times during the aforementioned period.
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/CapstoneProj_dependvar.jpeg" width="800px" height="600px">
-<h4 align="center"> Figure 10</h4>
+<h4 align="center"> Figure 11</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_players.jpeg" width="1000px">
-<h4 align="center"> Figure 11</h4>
+<h4 align="center"> Figure 12</h4>
 </p>
 
 <p text-align-last="start">
-A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 12. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'. Also note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or did not, indicating that putting is not the most important factor to win or lose a tournament in the PGA tour as it will also be seen when the permutation_importance function is applied. Another important observation is that the only two category/statistics that have greatly improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.', consequently impacting 'Scoring Average_AVG'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last years.
+A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'. Also note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or did not, indicating that putting is not the most important factor to win or lose a tournament in the PGA tour as it will also be seen when the permutation_importance function is applied. Another important observation is that the only two category/statistics that have greatly improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.', consequently impacting 'Scoring Average_AVG'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last years.
 </p>
 
 </br>
@@ -133,99 +141,99 @@ A good understanding on the differences in statistics among the players who won 
 <img src="images/capstone_proj_box_1.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_2.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_3.jpeg" width="12000px" height="400px">
-<h4 align="center"> Figure 12</h4>
+<h4 align="center"> Figure 13</h4>
 </p>
 </div>
 
 <h3>Splitting the variables</h3>
 <p text-align-last="start">
-Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as shown on Figure 13:
+Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as shown on Figure 14:
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_split.jpeg" width="1000px">
-<h4 align="center"> Figure 13</h4>
+<h4 align="center"> Figure 14</h4>
 </p>
 
 
 <h3>Cross-Validation Approach</h3>
 <p text-align-last="start">
-Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as shown on Figure 14:
+Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as shown on Figure 15:
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_cross.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 15</h4>
 </p>
 
 <h2>Modelling</h2>
 <p text-align-last="start">
-It is well known that working with imbalance data is always a challenge for any particular Machine Learning Classification Model. In this particular piece of work, Logistic Regression model was chosen as the Supervise Machine Learning Model due to the binary nature of the dependent/target variable (has only 2 outputs), and its capacity to predict the likelihood of events by looking at historical data points. However, as any machine learning algorithm, Logistic Rgression works much better when its hyperparamters are optimized using the appropriate metric. In this particular project, the metric chosen was: 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data. The metric called 'Recall' was tested as scoring to optimize the hyperparamters, but results were not encouraged. The pipeline model used is shown on Figure 15. 
+It is well known that working with imbalance data is always a challenge for any particular Machine Learning Classification Model. In this particular piece of work, Logistic Regression model was chosen as the Supervise Machine Learning Model due to the binary nature of the dependent/target variable (has only 2 outputs), and its capacity to predict the likelihood of events by looking at historical data points. However, as any machine learning algorithm, Logistic Rgression works much better when its hyperparamters are optimized using the appropriate metric. In this particular project, the metric chosen was: 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data. The metric called 'Recall' was tested as scoring to optimize the hyperparamters, but results were not encouraged. The pipeline model used is shown on Figure 16. 
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 15</h4>
+<h4 align="center"> Figure 16</h4>
 </p>
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 16). The optimum values for those, and the metrics results are shown on Figure 17. 
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 17). The optimum values for those, and the metrics results are shown on Figure 18. 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_param.jpeg" width="1000px">
-<h4 align="center"> Figure 16</h4>
+<h4 align="center"> Figure 17</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 17</h4>
-</p>
-
-
-As it can observed, the metrics: 'roc_auc', 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a different Machiner Learning classification model, in this case: the KNeighborsClassifier.The pipeline model used is shown on Figure 18. 
-
-</br>
-<p align="center">
-<img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
 <h4 align="center"> Figure 18</h4>
 </p>
 
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 19). The optimum values for those, and the metrics results are shown on Figure 20. It well noticed that the metrics have slightly improved using KNeighborsClassifier.
+As it can observed, the metrics: 'roc_auc', 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a different Machiner Learning classification model, in this case: the KNeighborsClassifier.The pipeline model used is shown on Figure 19. 
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
+<h4 align="center"> Figure 19</h4>
+</p>
+
+
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 20). The optimum values for those, and the metrics results are shown on Figure 21. It well noticed that the metrics have slightly improved using KNeighborsClassifier.
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_param.jpeg" width="1000px">
-<h4 align="center"> Figure 19</h4>
+<h4 align="center"> Figure 20</h4>
 </p>
 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 20</h4>
+<h4 align="center"> Figure 21</h4>
 </p>
 
 <h2>Evaluation</h2>
-As it can be observed,  the best model seems to be KNeighborsClassifier by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 21) also indicates that the best model is the  KNeighborsClassifier (red line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  as also built as shown on Figure 22. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament (100 and 97 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (18 and 21 in each model), i.e. improving the recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance. Unfortunately, both models performed fairly poor in the Recal score (.153 and .178 for Logistic regression and KNeighborsClassifier respectively).
+As it can be observed,  the best model seems to be KNeighborsClassifier by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 22) also indicates that the best model is the  KNeighborsClassifier (red line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  as also built as shown on Figure 23. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament (100 and 97 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (18 and 21 in each model), i.e. improving the recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance. Unfortunately, both models performed fairly poor in the Recal score (.153 and .178 for Logistic regression and KNeighborsClassifier respectively).
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_curve.jpeg" width="600px">
-<h4 align="center"> Figure 21</h4>
+<h4 align="center"> Figure 22</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_confusion.jpeg" width="1000px">
-<h4 align="center"> Figure 22</h4>
+<h4 align="center"> Figure 23</h4>
 </p>
 
 
@@ -244,3 +252,16 @@ Ranking the the importance of the independent variables that matter in predictin
 <img src="images/capstone_proj_perm_2.jpeg" width="500px">
 <h4 align="center"> Table 2</h4>
 </p>
+
+<h2>Deployment</h2>
+The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
+
+<h2>Main Conclusions & Recomendations</h2>
+<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 77 columns and 5304 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
+<p>2. The best classification model is the Logistic Regression model for classifying the dataset analyzed in this study, however Logistic Regression is the other three models are fairly decent, in particular the KNeighborsClassifier, and Decision Tree models. </p>
+<p> 3. It is important to highlight that the numerical variable "balance" was divided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1. This helped to improved the metrics.</p>
+<p> 4. There were five numerical independent variables used: 'age','balance','duration','previous','campaign','pdays', since "duration" was only for benchmark purposes and was discarded for realistic predictive modelling,the rest were nominals that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1 used as final input during the modelling phase.</p>
+<p> 5. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
+<p> 6. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
+<p> 7. In all categories: the client's age,client's job,client' marital status, client's education level, including housing's loan, personal's loan, even the contact communication's, the clients that subscribed term deposit have more balance in their account in general. </p>
+<p>8.It is recommend to test other classification models such as: Random Forest, Naive Bayes.
