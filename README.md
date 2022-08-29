@@ -26,7 +26,7 @@ The Business goal is  to come up with a supervized machine learning classificati
 </p>
 
 <h2>Data Understanding</h2>
-As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it consists of 27 columns and 4122 rows as shown on Figure 2. The target/independent columns is "Win" which is binary (o and 1). This variable is imbalanced as will be seen later. 
+As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it consists of 27 columns and 4122 rows as shown on Figure 2. The target/independent columns is "Win" which is binary (0 and 1). This variable is imbalanced as will be seen later. 
 
 </br>
 </br>
@@ -40,17 +40,59 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 </br>
 <p align="center">
 <img src="images/Capstone_proj_head-1.jpeg" width="900px" height="500px">
-<h4 align="center"> Figure 2</h4>
+<h4 align="center"> Figure 3</h4>
 </p>
 </div>
 
 
 <h2>Data Preparation</h2>
-All the independent variables are numerical. After dropping the "NaN" values, the dataset was reduced to 27 columns and  3380 rows as shown on Figure 3.. Duplicates were not observed.
+All the independent variables are numerical. Before cleaning the dataset, the index was reset, and the column: 'PLAYER NAME' was dropped (see Figure 4), since it won't be needed for further analysis. The null values were identified asshown on Figures 5, and dropped. The dataset was reduced to 27 columns and  3380 rows as shown on Figure 6. Duplicates was observed in just one row as shown on Figure 7.
+
+</br>
+</br>
+<p align="center">
+<img src="images/Capstone_proj_reset.jpeg" width="800px" height="150px">
+<h4 align="center"> Figure 4</h4>
+</p>
+</div>
+
+</br>
+<p align="center">
+<img src="images/Capstone_proj_nulls.jpeg" width="900px"  height="500px">
+<h4 align="center"> Figure 5</h4>
+</p>
+</div>
+
 
 </br>
 <p align="center">
 <img src="images/Capstone_proj_info_1.jpeg" width="500px" height="500px">
-<h4 align="center"> Figure 3</h4>
+<h4 align="center"> Figure 6</h4>
+</p>
+</div>
+
+</br>
+<p align="center">
+<img src="images/cpastone_proj_dup.jpeg" width="800px" height="150px">
+<h4 align="center"> Figure 7</h4>
+</p>
+</div>
+
+A correlation matrix was generated in order to explore how the variables correlated each other, i.e., potentially helping to reduced the number of independent variables that will be finally used. The results are shown on Figure 8, indicating that there a number of independent variables are highly positive correlated between each other. As results, the following columns were dropped: 'Ball Speed_AVG.','SG: Tee-to-Green_SG:OTT','SG: Tee-to-Green_SG:ARG','SG: Tee-to-Green_SG:APR','SG: Putting_TOTAL SG:PUTTING','Rough Tendency_%'. Also the column: 'Scoring Average_TOTAL ROUNDS' was dropped, since it won't be needed for the upcoming analysis.
+
+
+</br>
+<p align="center">
+<img src="images/CapstoneProj_matrixcorrelation.jpeg" width="900px" height="800px">
+<h4 align="center"> Figure 8</h4>
+</p>
+</div>
+
+More insight into the dataset can be gained before finalizing the data preparation by showing the value distribution for all the independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present.
+
+</br>
+<p align="center">
+<img src="images/CaptsoneProj_distindepvaria_1.jpeg" width="900px" height="800px">
+<h4 align="center"> Figure 9</h4>
 </p>
 </div>
