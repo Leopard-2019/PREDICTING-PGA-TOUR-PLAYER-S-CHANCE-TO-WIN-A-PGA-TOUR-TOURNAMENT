@@ -88,7 +88,7 @@ A correlation matrix was generated in order to explore how the variables correla
 </p>
 </div>
 
-More insight into the dataset can be gained before finalizing the data preparation by showing the value distribution for all the independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present.
+More insight into the dataset can be gained before finalizing the data preparation by showing the values distribution for all the independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present.
 
 </br>
 <p align="center">
@@ -97,35 +97,44 @@ More insight into the dataset can be gained before finalizing the data preparati
 </p>
 </div>
 
-A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win' as a hue. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'. Also note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or did not, indicating that putting is not the most important factor to win or lose a tournament in the PGA tour. Another important observation is that the only two category/statistics that have improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last years.
+The target column, i.e., the dependent variables: "Win" is binary (0 and 1), and imbalanced as shown on Figure 10:
+
+</br>
+</br>
+<p align="center">
+<img src="images/CapstoneProj_dependvar.jpeg" width="500px">
+<h4 align="center"> Figure 10</h4>
+</p>
+
+A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win' as a hue as seen on Figure 11. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'. Also note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or did not, indicating that putting is not the most important factor to win or lose a tournament in the PGA tour. Another important observation is that the only two category/statistics that have improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last years.
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_box_1.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_2.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_3.jpeg" width="12000px" height="400px">
-<h4 align="center"> Figure 10</h4>
+<h4 align="center"> Figure 11</h4>
 </p>
 </div>
 
 <h3>Splitting the variables</h3>
-Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as shown on Figure 11:
+Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as shown on Figure 12:
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_split.jpeg" width="1000px">
-<h4 align="center"> Figure 11</h4>
+<h4 align="center"> Figure 12</h4>
 </p>
 
 
 <h3>Cross-Validation Approach used</h3>
-Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as shown on Figure 12:
+Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as shown on Figure 13:
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_cross.jpeg" width="1000px">
-<h4 align="center"> Figure 12</h4>
+<h4 align="center"> Figure 13</h4>
 </p>
 
 
