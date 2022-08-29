@@ -103,8 +103,8 @@ Please note that the difference in 'SG: Putting_AVERAGE' is not significant  bet
 </br>
 <p align="center">
 <img src="images/capstone_proj_box_1.jpeg" width="900px" height="800px">
-  <img src="images/capstone_proj_box_2.jpeg" width="900px" height="800px">
-  <img src="images/capstone_proj_box_3.jpeg" width="900px" height="800px">
+<img src="images/capstone_proj_box_2.jpeg" width="900px" height="800px">
+<img src="images/capstone_proj_box_3.jpeg" width="900px" height="400px">
 <h4 align="center"> Figure 10</h4>
 </p>
 </div>
