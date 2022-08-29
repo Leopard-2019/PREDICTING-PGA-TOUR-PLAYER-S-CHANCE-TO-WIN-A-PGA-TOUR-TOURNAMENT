@@ -197,7 +197,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 <h4 align="center"> Figure 18</h4>
 </p>
 
-It well noticed that the metrics have slightly improved using KNeighborsClassifier as shown on Figure 9.
+It well noticed that the metrics have slightly improved using KNeighborsClassifier as shown on Figure 19.
 
 </br>
 <p align="center">
