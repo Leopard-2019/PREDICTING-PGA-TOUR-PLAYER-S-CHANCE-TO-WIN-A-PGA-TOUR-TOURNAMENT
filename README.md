@@ -211,29 +211,13 @@ As it can be observed,  the best model seems to be KNeighborsClassifier by sligh
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_eval_1_2.jpeg" width="500px">
+<img src="images/capstone_proj_confusion.jpeg" width="500px">
 <h4 align="center"> Table 1</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_eval_2.jpeg" width="600px">
+<img src="images/capstone_proj_curve.jpeg" width="600px">
 <h4 align="center"> Figure 38</h4>
 </p>
-
-</br>
-</br>
-<p align="center">
-<img src="images/Figure17_confusion.jpeg" width="1200px">
-<h4 align="center"> Figure 39</h4>
-</p>
-
-</br>
-</br>
-<p align="center">
-<img src="images/Figure17_eval_44.jpeg" width="400px">
-<h4 align="center"> Table 2</h4>
-</p>
-
-
