@@ -109,7 +109,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 
 </br>
 <p align="center">
-<img src="images/capstone_proj_stats.jpeg" width="900px" height="500px" >
+<img src="images/capstone_proj_stats.jpeg" width="1200px" height="500px" >
 <h4 align="center"> Figure 10</h4>
 </p>
 </div>
@@ -195,7 +195,9 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </p>
 
 
+<p text-align-last="start">
 As it can observed, the metrics: 'roc_auc', 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a different Machiner Learning classification model, in this case: the KNeighborsClassifier.The pipeline model used is shown on Figure 19. 
+</p>
 
 </br>
 <p align="center">
@@ -203,8 +205,9 @@ As it can observed, the metrics: 'roc_auc', 'precision', and 'recall' were not t
 <h4 align="center"> Figure 19</h4>
 </p>
 
-
+<p text-align-last="start">
 The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 20). The optimum values for those, and the metrics results are shown on Figure 21. It well noticed that the metrics have slightly improved using KNeighborsClassifier.
+</p>
 
 </br>
 <p align="center">
@@ -220,7 +223,9 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </p>
 
 <h2>Evaluation</h2>
+<p text-align-last="start">
 As it can be observed,  the best model seems to be KNeighborsClassifier by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 22) also indicates that the best model is the  KNeighborsClassifier (red line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  as also built as shown on Figure 23. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament (100 and 97 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (18 and 21 in each model), i.e. improving the recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance. Unfortunately, both models performed fairly poor in the Recal score (.153 and .178 for Logistic regression and KNeighborsClassifier respectively).
+</p>
 
 </br>
 </br>
@@ -236,8 +241,9 @@ As it can be observed,  the best model seems to be KNeighborsClassifier by sligh
 <h4 align="center"> Figure 23</h4>
 </p>
 
-
+<p text-align-last="start">
 Ranking the the importance of the independent variables that matter in predicting 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 1 and 2), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables: 'Driving Distance_AVG', and  'Club Head Speed_AVG.' are not within the five most ones,i.e., indicating that swinging the club faster, and driving the ball longer do not uarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf  tournaments.
+</p>
 
 </br>
 </br>
