@@ -97,8 +97,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </p>
 </div>
 
-A good understanding on the differences in statistics among the players who won and the ones who not,  can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win' as a hue. It can seen that the players ranking 1st after the last round of each tournament yearly average perform much better in all the categories/statistics, in particular de follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'.
-Please note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or not. Another important observation is that the only two category/statistics that have improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'.
+A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win' as a hue. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'. Also note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or did not, indicating that putting is not the most important factor to win or lose a tournament in the PGA tour. Another important observation is that the only two category/statistics that have improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last years.
 
 </br>
 <p align="center">
@@ -108,4 +107,25 @@ Please note that the difference in 'SG: Putting_AVERAGE' is not significant  bet
 <h4 align="center"> Figure 10</h4>
 </p>
 </div>
+
+<h3>Splitting the variables</h3>
+Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as shown on Figure 11:
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_split.jpeg" width="1000px">
+<h4 align="center"> Figure 11</h4>
+</p>
+
+
+<h3>Cross-Validation Approach used</h3>
+Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as shown on Figure 12:
+
+</br>
+</br>
+<p align="center">
+<img src="images/capstone_proj_cross.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
+
 
