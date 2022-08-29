@@ -211,7 +211,7 @@ As it can be observed,  the best model seems to be KNeighborsClassifier by sligh
 </br>
 </br>
 <p align="center">
-<img src="images/capstone_proj_confusion.jpeg" width="500px">
+<img src="images/capstone_proj_confusion.jpeg" width="1000px">
 <h4 align="center"> Table 1</h4>
 </p>
 
