@@ -206,24 +206,24 @@ It well noticed that the metrics have slightly improved using KNeighborsClassifi
 </p>
 
 <h2>Evaluation</h2>
-As it can be observed,  the best model seems to be KNeighborsClassifier by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve ( see figure 21) also indicates that the best model is the  KNeighborsClassifier (red line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix (figure 22). It is thought that the recall is more important, since the bank would greatly regret if potentially good clients are predicted not to subscribe a term deposit. In other words, minimizing the number of False Negatives would be of paramount importance for the bank, specially knowing that those outnumber the number of False Positives. However, overall, it was thought that Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study. The KNeighborsClassifier and Decision Tree are fairly decent as well. 
+As it can be observed,  the best model seems to be KNeighborsClassifier by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve ( see figure 20) also indicates that the best model is the  KNeighborsClassifier (red line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix (figure 21). It is thought that the recall is more important, since the bank would greatly regret if potentially good clients are predicted not to subscribe a term deposit. In other words, minimizing the number of False Negatives would be of paramount importance for the bank, specially knowing that those outnumber the number of False Positives. However, overall, it was thought that Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study. The KNeighborsClassifier and Decision Tree are fairly decent as well. 
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_curve.jpeg" width="600px">
-<h4 align="center"> Figure 21</h4>
+<h4 align="center"> Figure 20</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_confusion.jpeg" width="1000px">
-<h4 align="center"> Figure 22</h4>
+<h4 align="center"> Figure 21</h4>
 </p>
 
 
-Ranking the the importance of the independent variables that matter in predicting 'Win' can be done using the  tool permutation.importance (teh results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 1 and 2). However, it is interesting that this variable is much more important in the Logistic Regression Model.
+Ranking the the importance of the independent variables that matter in predicting 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 1 and 2), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables: 'Driving Distance_AVG', and  '  Club Head Speed_AVG.' are not the most ones,i.e., indicating that swinging the club faster, and driving the ball longer do not uarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf  tournaments.
 
 </br>
 </br>
