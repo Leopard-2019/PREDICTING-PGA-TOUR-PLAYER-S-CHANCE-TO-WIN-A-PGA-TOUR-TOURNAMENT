@@ -84,15 +84,15 @@ A correlation matrix was generated in order to explore how the variables correla
 </br>
 <p align="center">
 <img src="images/CapstoneProj_matrixcorrelation.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 7</h4>
+<h4 align="center"> Figure 8</h4>
 </p>
 </div>
 
-More insight into the dataset can be gained before finalizing the data preparation by showing the value distribution for all the independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present, i.e., n
+More insight into the dataset can be gained before finalizing the data preparation by showing the value distribution for all the independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present.
 
 </br>
 <p align="center">
 <img src="images/CaptsoneProj_distindepvaria_1.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 8</h4>
+<h4 align="center"> Figure 9</h4>
 </p>
 </div>
