@@ -96,3 +96,14 @@ More insight into the dataset can be gained before finalizing the data preparati
 <h4 align="center"> Figure 9</h4>
 </p>
 </div>
+
+A good understanding on the differences in statistics among the players who won and the ones who not,  can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win' as a hue. It can seen that the players ranking 1st after the last round of each tournament yearly average perform much better in all the categories/statistics, in particular de follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'.
+Please note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or not. Another important observation is that the only two category/statistics that have improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'.
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_box_1.jpeg" width="900px" height="800px">
+<h4 align="center"> Figure 10</h4>
+</p>
+</div>
+
