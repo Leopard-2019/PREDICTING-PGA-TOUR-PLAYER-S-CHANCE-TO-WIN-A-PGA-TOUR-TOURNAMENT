@@ -184,7 +184,7 @@ As it can observed, the metrics: 'roc_auc', 'precision', and 'recall' were not t
 
 </br>
 <p align="center">
-<img src="images/" width="250px">
+<img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
 <h4 align="center"> Figure 17</h4>
 </p>
 
