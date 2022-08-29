@@ -159,6 +159,26 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 It is well known that working with imbalance data is always a challenge for any particular Machine Learning Classification Model. In this particular piece of work, Logistic Regression model was chosen as the Supervise Machine Learning Model due to the binary nature of the dependent/target variable (has only 2 outputs), and its capacity to predict the likelihood of events by looking at historical data points. However, as any machine learning algorithm, Logistic Rgression works much better when its hyperparamters are optimized using the appropriate metric. In this particular project, the metric chosen was: 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data. The metric called 'Recall' was tested as scoring to optimize the hyperparamters, but results were not encouraged. The pipeline model used is shown on Figure 14. 
 </p>
 
+</br>
+<p align="center">
+<img src="images/" width="300px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 15). The optimum values for those, and the metrics results are shown on Figure 16. 
+
+</br>
+<p align="center">
+<img src="images/" width="1000px">
+<h4 align="center"> Figure 15</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/" width="1000px">
+<h4 align="center"> Figure 16</h4>
+</p>
+
 
 
 
