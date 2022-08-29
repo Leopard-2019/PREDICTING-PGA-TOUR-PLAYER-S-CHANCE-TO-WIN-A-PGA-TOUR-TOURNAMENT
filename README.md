@@ -223,18 +223,18 @@ As it can be observed,  the best model seems to be KNeighborsClassifier by sligh
 </p>
 
 
-Ranking the the importance of the independent variables that matter in predicting 'Win' can be done using the  tool permutation.importance (filtering the result to only leave the columns with the importance greater than 0). The models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG', which make sense. However, it is interesting that this variable is much more important in the Logistic Regression Model.
+Ranking the the importance of the independent variables that matter in predicting 'Win' can be done using the  tool permutation.importance (teh results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense. However, it is interesting that this variable is much more important in the Logistic Regression Model.
 
 </br>
 </br>
 <p align="center">
-<img src="images/capstone_proj_perm_1.jpeg" width="600px">
+<img src="images/capstone_proj_perm_1.jpeg" width="500px" height="500px">
 <h4 align="center"> Table 1</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
-<img src="images/capstone_proj_perm_2.jpeg" width="600px">
+<img src="images/capstone_proj_perm_2.jpeg" width="500px" height="500px">
 <h4 align="center"> Figure 38</h4>
 </p>
