@@ -180,5 +180,30 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </p>
 
 
+As it can observed, the metrics: 'roc_auc', 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a different Machiner Learning classification model, in this case: the KNeighborsClassifier.The pipeline model used is shown on Figure 17. 
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
+<h4 align="center"> Figure 17</h4>
+</p>
+
+
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 18). The optimum values for those, and the metrics results are shown on Figure 19. 
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_model2_param.jpeg" width="1000px">
+<h4 align="center"> Figure 18</h4>
+</p>
+
+It well noticed that the metrics have slightly improved using KNeighborsClassifier as shown on Figure 9.
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_model2_pipe.jpeg" width="1000px">
+<h4 align="center"> Figure 19</h4>
+</p>
+
 
 
