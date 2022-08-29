@@ -107,7 +107,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </div>
 
 <p text-align-last="start">
-The target column, i.e., the dependent variables: "Win" is binary (0=did not win and 1= won), and clearly imbalaced. it is important to point out that in this analisis 'Win' means a player/players ranked 1st after 4 rounds in a PGA tournament (see Figure 10). Therefore, the playoffs results when players ended up in a tie after final round are not included. In total, there were 831 unique players competed from 2011-2021, i.e, there were many who did compete several times during the aforementioned period as shown on Figure 11:
+The target column, i.e., the dependent variables: "Win" is binary (0=did not win and 1= won), and clearly imbalaced. it is important to point out that in this analisis 'Win' means a player/players ranked 1st after 4 rounds in a PGA tournament (see Figure 10). Therefore, the playoffs results when players ended up in a tie after final round are not included. In total, there were 831 unique players whom competed from 2011-2021 as shown on Figure 11, i.e, there were many who did compete several times during the aforementioned period.
 </p>
 
 </br>
