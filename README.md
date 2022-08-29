@@ -46,7 +46,7 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 
 
 <h2>Data Preparation</h2>
-All the independent variables are numerical. Before cleaning the dataset, the index was reset, and the column: 'PLAYER NAME' was dropped (see Figure 4), since it won't be needed for further analysis. The null values were identified asshown on Figures 5, and dropped. The dataset was reduced to 27 columns and  3380 rows as shown on Figure 6. Duplicates was observed in just one row.
+All the independent variables are numerical. Before cleaning the dataset, the index was reset, and the column: 'PLAYER NAME' was dropped (see Figure 4), since it won't be needed for further analysis. The null values were identified asshown on Figures 5, and dropped. The dataset was reduced to 27 columns and  3380 rows as shown on Figure 6. Duplicates was observed in just one row as shown on Figure 7.
 
 </br>
 </br>
@@ -67,6 +67,13 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 </br>
 <p align="center">
 <img src="images/Capstone_proj_info_1.jpeg" width="500px" height="500px">
+<h4 align="center"> Figure 6</h4>
+</p>
+</div>
+
+</br>
+<p align="center">
+<img src="images/cpastone_proj_dup.jpeg" width="800px" height="150px">
 <h4 align="center"> Figure 6</h4>
 </p>
 </div>
