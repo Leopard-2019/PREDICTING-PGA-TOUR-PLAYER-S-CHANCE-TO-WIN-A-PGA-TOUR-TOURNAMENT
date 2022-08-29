@@ -27,7 +27,7 @@ The Business goal is  to come up with a supervized machine learning classificati
 
 <h2>Data Understanding</h2>
 <p text-align-last="start">
-As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it consists of 27 columns and 4122 rows as shown on Figure 2. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicate winning a PGA tournament.
+As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it originally consists of 27 columns and 4122 rows as shown on Figure 2. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicate winning a PGA tournament.
 </p>
 
 </br>
@@ -242,7 +242,7 @@ As it can be observed,  the best model seems to be KNeighborsClassifier by sligh
 </p>
 
 <p text-align-last="start">
-Ranking the the importance of the independent variables that matter in predicting 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 1 and 2), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables: 'Driving Distance_AVG', and  'Club Head Speed_AVG.' are not within the five most ones,i.e., indicating that swinging the club faster, and driving the ball longer do not uarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf  tournaments.
+Ranking the the importance of the independent variables that matter in predicting 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 1 and 2), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables: 'Driving Distance_AVG', and  'Club Head Speed_AVG.' are not within the five most important ones,i.e., indicating that swinging the club faster, and driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf tournaments.
 </p>
 
 </br>
@@ -263,11 +263,11 @@ Ranking the the importance of the independent variables that matter in predictin
 The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusions & Recomendations</h2>
-<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 77 columns and 5304 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
-<p>2. The best classification model is the Logistic Regression model for classifying the dataset analyzed in this study, however Logistic Regression is the other three models are fairly decent, in particular the KNeighborsClassifier, and Decision Tree models. </p>
-<p> 3. It is important to highlight that the numerical variable "balance" was divided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1. This helped to improved the metrics.</p>
-<p> 4. There were five numerical independent variables used: 'age','balance','duration','previous','campaign','pdays', since "duration" was only for benchmark purposes and was discarded for realistic predictive modelling,the rest were nominals that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1 used as final input during the modelling phase.</p>
+<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 20 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
+<p>2. The best classification model is the KNeighborsClassifier model for classifying the dataset analyzed in this study. Logistic Regression was not that far. However, both of them performed poorly in some scoring metrics, specially in Recall.</p>
 <p> 5. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
 <p> 6. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
-<p> 7. In all categories: the client's age,client's job,client' marital status, client's education level, including housing's loan, personal's loan, even the contact communication's, the clients that subscribed term deposit have more balance in their account in general. </p>
-<p>8.It is recommend to test other classification models such as: Random Forest, Naive Bayes.
+<p> 7. The most important independent variable was: 'Scoring Average_AVG'  in both models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
+<p> 8. The independent variables: 'Driving Distance_AVG', and  'Club Head Speed_AVG.' are not within the five most important ones,i.e., indicating that swinging the club faster, and driving the ball longer do not uarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf.</p>
+<p> 9. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf tournaments.
+<p> 10.The next steps will consist testing ensembles techniques such as bagging and boostingin order to explore the possibility to increase both Precision and Recall scores, i.e., proving a more robust, powerful, and confident supervized machine learning Classification model.
