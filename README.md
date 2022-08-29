@@ -161,7 +161,7 @@ It is well known that working with imbalance data is always a challenge for any 
 
 </br>
 <p align="center">
-<img src="images/capstone_proj_pipe.jpeg" width="200px">
+<img src="images/capstone_proj_pipe.jpeg" width="250px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
