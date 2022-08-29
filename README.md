@@ -137,4 +137,7 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 <h4 align="center"> Figure 13</h4>
 </p>
 
+<h2>Modelling</h2>
+It is well know that working with imbalance data is always a challenge for any particular Machine Learning Classification Model, the Logistic Regression model was chosen as the Supervise Machine Learning Model in this project due to the binary nature of the dependent/target variable (has only 2 outputs). The metric used to estimate the optimum parameters for each model was 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data.
+
 
