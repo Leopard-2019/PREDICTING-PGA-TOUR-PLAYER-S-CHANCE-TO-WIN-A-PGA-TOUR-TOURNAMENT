@@ -161,7 +161,7 @@ It is well known that working with imbalance data is always a challenge for any 
 
 </br>
 <p align="center">
-<img src="images/" width="300px">
+<img src="images/capstone_proj_pipe.jpeg" width="300px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
@@ -169,13 +169,13 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/" width="1000px">
+<img src="images/capstone_proj_param.jpeg" width="1000px">
 <h4 align="center"> Figure 15</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/" width="1000px">
+<img src="images/capstone_proj_metric.jpeg" width="1000px">
 <h4 align="center"> Figure 16</h4>
 </p>
 
