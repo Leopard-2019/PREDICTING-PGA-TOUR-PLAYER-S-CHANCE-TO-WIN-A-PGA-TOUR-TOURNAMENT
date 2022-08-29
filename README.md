@@ -228,13 +228,13 @@ Ranking the the importance of the independent variables that matter in predictin
 </br>
 </br>
 <p align="center">
-<img src="images/capstone_proj_perm_1.jpeg" width="500px" height="700px">
+<img src="images/capstone_proj_perm_1.jpeg" width="500px" height="600px">
 <h4 align="center"> Table 1</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
-<img src="images/capstone_proj_perm_2.jpeg" width="500px" height="700px">
+<img src="images/capstone_proj_perm_2.jpeg" width="500px" height="600px">
 <h4 align="center"> Figure 38</h4>
 </p>
