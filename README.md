@@ -109,7 +109,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 
 </br>
 <p align="center">
-<img src="images/capstone_proj_stats.jpeg" width="900px" height="800px">
+<img src="images/capstone_proj_stats.jpeg" width="900px" height="400px">
 <h4 align="center"> Figure 10</h4>
 </p>
 </div>
