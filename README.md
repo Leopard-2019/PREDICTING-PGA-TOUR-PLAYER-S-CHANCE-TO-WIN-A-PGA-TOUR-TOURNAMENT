@@ -102,7 +102,7 @@ The target column, i.e., the dependent variables: "Win" is binary (0 and 1), and
 </br>
 </br>
 <p align="center">
-<img src="images/CapstoneProj_dependvar.jpeg" width="500px">
+<img src="images/CapstoneProj_dependvar.jpeg" width="800px" height="800px">
 <h4 align="center"> Figure 10</h4>
 </p>
 
