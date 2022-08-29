@@ -205,5 +205,35 @@ It well noticed that the metrics have slightly improved using KNeighborsClassifi
 <h4 align="center"> Figure 19</h4>
 </p>
 
+<h2>Evaluation</h2>
+As it can be observed,  the best model seems to be KNeighborsClassifier by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve ( see figure 20) also indicates that the best model is the  KNeighborsClassifier (red line), again bt slight margin. It did consume less elapsed time than that of Logistic Regression. The confusion matrix (figure 21). It is thought that the recall is more important, since the bank would greatly regret if potentially good clients are predicted not to subscribe a term deposit. In other words, minimizing the number of False Negatives would be of paramount importance for the bank, specially knowing that those outnumber the number of False Positives. However, overall, it was thought that Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study. The KNeighborsClassifier and Decision Tree are fairly decent as well. 
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_eval_1_2.jpeg" width="500px">
+<h4 align="center"> Table 1</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_eval_2.jpeg" width="600px">
+<h4 align="center"> Figure 38</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_confusion.jpeg" width="1200px">
+<h4 align="center"> Figure 39</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_eval_44.jpeg" width="400px">
+<h4 align="center"> Table 2</h4>
+</p>
 
 
