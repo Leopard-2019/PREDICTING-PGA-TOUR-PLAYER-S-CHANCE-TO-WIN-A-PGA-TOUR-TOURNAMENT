@@ -97,7 +97,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </p>
 </div>
 
-The target column, i.e., the dependent variables: "Win" is binary (0 and 1), and imbalanced as shown on Figure 10:
+The target column, i.e., the dependent variables: "Win" is binary (0=did not win and 1-won), and imbalanced as shown on Figure 10:
 
 </br>
 </br>
