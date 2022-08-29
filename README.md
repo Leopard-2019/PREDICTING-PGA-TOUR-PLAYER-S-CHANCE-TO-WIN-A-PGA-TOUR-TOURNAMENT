@@ -127,7 +127,7 @@ Splitting the dependent variable from the independent variables and assigning th
 </p>
 
 
-<h3>Cross-Validation Approach used</h3>
+<h3>Cross-Validation Approach</h3>
 Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as shown on Figure 13:
 
 </br>
