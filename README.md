@@ -25,6 +25,8 @@ This python application using jupyter notebook predicts the chance of any pga to
 The Business goal is  to come up with a supervized machine learning classification model, in this particular case, Logistic Regression was initially chosen, but  K-Nearest Neighbor was also tested for reasons that will be explained later. The output will be  binary, meaning that a player must get 1 to have high chance to win, or 0 to have very small/zero chance to win a PGA tournament.The dataset was obtained by doing web scraping in the offical website of the PGA Tour (https://www.pgatour.com/stats), which contained the statistics collected from the tournaments played since 1980. In this particular application, the statistics used were from 2011-2021, i.e., covering only 10 years span. However, the potential user can easily covered the completed span (1980-2022) is desired by using the jupyter notebook attached.
 </p>
 
+[Jupiter Notebook used]()
+
 <h2>Data Understanding</h2>
 <p text-align-last="start">
 As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it originally consists of 27 columns and 4122 rows as shown on Figure 2. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicates winning or not winning a PGA tournament during the aforementioned time span.
