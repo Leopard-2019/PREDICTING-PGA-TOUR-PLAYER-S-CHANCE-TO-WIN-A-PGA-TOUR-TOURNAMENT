@@ -120,7 +120,7 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 </br>
 </br>
 <p align="center">
-<img src="images/" width="800px" height="600px">
+<img src="images/capstone_proj_players.jpeg" width="800px">
 <h4 align="center"> Figure 11</h4>
 </p>
 
