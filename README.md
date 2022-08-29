@@ -118,7 +118,7 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 </p>
 
 <p text-align-last="start">
-A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win' as a hue as seen on Figure 11. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'. Also note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or did not, indicating that putting is not the most important factor to win or lose a tournament in the PGA tour. Another important observation is that the only two category/statistics that have improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last years.
+A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 11. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'. Also note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or did not, indicating that putting is not the most important factor to win or lose a tournament in the PGA tour as it will also be seen when the permutation_importance function is applied. Another important observation is that the only two category/statistics that have greatly improved through the years are: 'Driving Distance_AVG', and '  Club Head Speed_AVG.', consequently impacting 'Scoring Average_AVG'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last years.
 </p>
 
 </br>
@@ -219,5 +219,21 @@ As it can be observed,  the best model seems to be KNeighborsClassifier by sligh
 </br>
 <p align="center">
 <img src="images/capstone_proj_curve.jpeg" width="600px">
+<h4 align="center"> Figure 38</h4>
+</p>
+
+Ranking the the importance of the independent variables that matter in predicting 'Win' can be done using the  tool permutation.importance (filtering the result to only leave the columns with the importance greater than 0). The models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG', which make sense. However, it is interesting that this variable is much more important in the Logistic Regression Model.
+
+</br>
+</br>
+<p align="center">
+<img src="images/" width="1000px">
+<h4 align="center"> Table 1</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/" width="600px">
 <h4 align="center"> Figure 38</h4>
 </p>
