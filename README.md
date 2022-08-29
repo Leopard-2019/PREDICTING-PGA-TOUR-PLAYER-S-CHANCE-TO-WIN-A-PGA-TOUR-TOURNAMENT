@@ -193,7 +193,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/" width="1000px">
+<img src="images/capstone_proj_model2_param.jpeg" width="1000px">
 <h4 align="center"> Figure 18</h4>
 </p>
 
@@ -201,7 +201,7 @@ It well noticed that the metrics have slightly improved using KNeighborsClassifi
 
 </br>
 <p align="center">
-<img src="images/" width="1000px">
+<img src="images/capstone_proj_model2_metric.jpeg" width="1000px">
 <h4 align="center"> Figure 19</h4>
 </p>
 
