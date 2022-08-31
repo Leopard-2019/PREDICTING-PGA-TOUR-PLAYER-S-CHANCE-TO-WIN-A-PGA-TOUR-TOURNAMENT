@@ -1,5 +1,5 @@
 <div>
-<img src="images/Capstone_proj_logo.jpeg" alt="isolated"  width="200px" align="left">
+<img src="images/Capstone_proj_logo.jpeg" alt="isolated"  width="220px" align="left">
 <h1> PREDICTING PGA TOUR PLAYER'S CHANCE TO WIN A PGA TOUR-TOURNAMENT</h1>
 <p text-align= "right">
 This python application using jupyter notebook predicts the chance of any pga tour player to win a tournament using Logistic Regression as a Supervized Machine Learning Algorithm.
@@ -22,12 +22,14 @@ This python application using jupyter notebook predicts the chance of any pga to
 
 <h2>Business Understanding</h2>
 <p text-align-last="start">
-The Business goal is  to come up with a supervized machine learning classification model, in this particular case, Logistic Regression was initially chosen, but  K-Nearest Neighbor was also tested for reasons that will be explained later. The output will be  binary, meaning that a player must get 1 to have high chance to win, or 0 to have very small/zero chance to win a PGA tournament.The dataset was obtained by doing web scraping in the offical website of the PGA Tour (https://www.pgatour.com/stats), which contained the statistics collected from the tournaments played since 1980. In this particular application, the statistics used were from 2011-2021, i.e., covering only 10 years span. However, the potential user can easily covered the completed span (1980-2022) is desired by using the jupyter notebook attached.
+The Business goal is  to come up with a supervized machine learning classification model, in this particular case, Logistic Regression was initially chosen, but  K-Nearest Neighbor was also tested for reasons that will be explained later. The output is  binary, meaning that a player must get 1 to have high chance to win, or 0 to have very small/zero chance to win a PGA tournament.The dataset was obtained by doing web scraping in the offical website of the PGA Tour (https://www.pgatour.com/stats), which contained the statistics collected from the tournaments played since 1980. In this particular application, the statistics used were from 2011-2021, i.e., covering only 10 years span. However, the potential user can easily covered the completed span (1980-2022) is desired by using the jupyter notebook attached.
 </p>
+
+[Jupiter Notebook used](https://github.com/Leopard-2019/PREDICTING-PGA-TOUR-PLAYER-S-CHANCE-TO-WIN-A-PGA-TOUR-TOURNAMENT/blob/main/notebook/Capstone_Project_Data-Copy1.ipynb)
 
 <h2>Data Understanding</h2>
 <p text-align-last="start">
-As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it originally consists of 27 columns and 4122 rows as shown on Figure 2. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicates winning or not winning a PGA tournament during the aforementioned time span.
+As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it originally consists of 27 columns and 4122 rows as shown on Figure 2. it is important to mention that the statistics were averaged yearly for each player. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicates winning or not winning a PGA tournament during the aforementioned time span.
 </p>
 
 </br>
@@ -264,10 +266,10 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 
 <h2>Main Conclusions & Recomendations</h2>
 <p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 20 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
-<p>2. The best classification model is the  K-Nearest Neighbor model for classifying the dataset analyzed in this study. Logistic Regression was not that far. However, both of them performed poorly in some scoring metrics, specially in Recall.</p>
-<p> 5. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
-<p> 6. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
-<p> 7. The most important independent variable was: 'Scoring Average_AVG'  in both models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
-<p> 8. The independent variables: 'Driving Distance_AVG', and  'Club Head Speed_AVG.' are not within the five most important ones,i.e., indicating that swinging the club faster, and driving the ball longer do not uarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf.</p>
-<p> 9. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf tournaments.
-<p> 10.The next steps will consist testing ensembles techniques such as bagging and boostingin order to explore the possibility to increase both Precision and Recall scores, i.e., proving a more robust, powerful, and confident supervized machine learning Classification model.
+<p>2. it is thougth that the best classification model is the Logistic Regression, because it is telling the history more clear on which statistics are more imporant to win a PGA tournament, despite the fact that its metrics: precision and recal are a bit lower thant that of the  K-Nearest Neighbor However, both models performed poorly in the recall score.</p>
+<p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
+<p> 4. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
+<p> 5. The most important independent variable was: 'Scoring Average_AVG'  in both models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
+<p> 6. The independent variables: 'Driving Distance_AVG', and  'Club Head Speed_AVG.' are not within the five most important ones,i.e., indicating that swinging the club faster, and driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf.</p>
+<p> 7. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf tournaments as are obviously expected.
+<p> 8.The next steps will consist testing ensembles techniques such as bagging and boostingin in order to explore the possibility to increase both Precision and Recall scores, i.e., proving a more robust, powerful, and confident Supervized Machine Learning Classification Model.
