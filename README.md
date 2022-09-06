@@ -267,7 +267,7 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 
 <h2>Main Conclusions & Recomendations</h2>
 <p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 22 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
-<p>2. it is thougth that the best classification model is the K-Nearest Neighbor, because it is telling the history more clear on which statistics are more imporant to win a PGA tournament. Both models performed poorly in the recall score (less that 0.15).</p>
+<p>2. It is thougth that the best classification model is the K-Nearest Neighbor, because it is telling the history more clear on which statistics are more imporant to win a PGA tournament. Both models performed poorly in the recall score (less that 0.15).</p>
 <p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
 <p> 4. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
 <p> 5. The most important independent variable was: 'Scoring Average_AVG'  in both models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
