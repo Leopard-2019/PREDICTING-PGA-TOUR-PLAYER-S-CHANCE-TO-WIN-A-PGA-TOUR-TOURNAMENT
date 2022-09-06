@@ -142,8 +142,8 @@ A good understanding on the differences in statistics among the players who won 
 <p align="center">
 <img src="images/capstone_proj_box_1.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_2.jpeg" width="1200px" height="800px">
-<img src="images/capstone_proj_box_3.jpeg" width="12000px" height="400px">
-<img src="images/capstone_proj_box_4.jpeg" width="12000px" height="400px">
+<img src="images/capstone_proj_box_3.jpeg" width="1200px" height="800px">
+<img src="images/capstone_proj_box_4.jpeg" width="600px" height="800px">
 <h4 align="center"> Figure 13</h4>
 </p>
 </div>
