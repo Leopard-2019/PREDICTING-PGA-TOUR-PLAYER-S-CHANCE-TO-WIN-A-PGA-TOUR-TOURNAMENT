@@ -35,7 +35,7 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 </br>
 </br>
 <p align="center">
-<img src="images/CapstoneProj_info_2.jpeg" width="500px" height="500px">
+<img src="images/CapstoneProj_info_1.jpeg" width="500px" height="500px">
 <h4 align="center"> Figure 2</h4>
 </p>
 </div>
@@ -266,7 +266,7 @@ Ranking the the importance of the independent variables that matter in predictin
 The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusions & Recomendations</h2>
-<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 20 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
+<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 22 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
 <p>2. it is thougth that the best classification model is the Logistic Regression, because it is telling the history more clear on which statistics are more imporant to win a PGA tournament, despite the fact that its metrics: precision and recal are a bit lower thant that of the  K-Nearest Neighbor. However, both models performed poorly in the recall score (less that 0.20).</p>
 <p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
 <p> 4. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
