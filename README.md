@@ -135,7 +135,7 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 </p>
 
 <p text-align-last="start">
-A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', SG: Tee-to-Green_AVERAGE', 'Putting Average", and "Scrambling %". An important observation is that the only two categories/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last 10 years.
+A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', SG: Tee-to-Green_AVERAGE', 'Putting Average", and "Scrambling %". An important observation is that the only two categories/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. Although, Putting_Average has more less consistently decreased in the aforementioned period.The major reasons behind it are : golf players are more athletic than ever, and equipment/balls technology has dramatically improved through the years, specially the last 10 years.
 </p>
 
 </br>
@@ -180,7 +180,7 @@ It is well known that working with imbalance data is always a challenge for any 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 16. Pipeline Logistic Regression</h4>
+<h4 align="center"> Figure 16. Pipeline: Logistic Regression</h4>
 </p>
 
 The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 17). The optimum values for those, and the metrics results are shown on Figure 18. 
@@ -188,13 +188,13 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/capstone_proj_param.jpeg" width="1000px">
-<h4 align="center"> Figure 17. Parameters Logistic Regression</h4>
+<h4 align="center"> Figure 17. GridSearch Parameters: Logistic Regression</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 18. Metrics and Elapse Time Logistic Regression</h4>
+<h4 align="center"> Figure 18. Metrics and Elapse Time: Logistic Regression</h4>
 </p>
 
 
@@ -205,13 +205,13 @@ As it can observed, the metrics: 'precision', and 'recall' were not that good, i
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 19. Pipeline K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 19. Pipeline: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe_randomforest.jpeg" width="250px">
-<h4 align="center"> Figure 20. Pipeline Random Forest</h4>
+<h4 align="center"> Figure 20. Pipeline: Random Forest</h4>
 </p>
 
 <p text-align-last="start">
@@ -221,26 +221,26 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_param.jpeg" width="1000px">
-<h4 align="center"> Figure 21. Parameters K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 21. GridSearch Parameters: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_param.jpeg" width="1000px">
-<h4 align="center"> Figure 22. Parameters Random Forest</h4>
+<h4 align="center"> Figure 22. GridSearchParameters: Random Forest</h4>
 </p>
 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 23. Metrics and Elapsed Time K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 23. Metrics and Elapsed Time: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_metrics.jpeg" width="1000px">
-<h4 align="center"> Figure 24. Metrics and Elapsed Time Random Forest</h4>
+<h4 align="center"> Figure 24. Metrics and Elapsed Time: Random Forest</h4>
 </p>
 
 <h2>Evaluation</h2>
@@ -300,8 +300,8 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 
 <h2>Main Conclusions & Recomendations</h2>
 <p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 29 columns and  3379. The target columns was "Win" which stands:  ranking first (i.e, Win) in any PGA tournament during the period 2011-2021</p>
-<p>2. it is thougth that the best classification model is  a close call between the K-Nearest Neighbor, and Random Forest, However, The former ranked the most widely known important golf player's statistics among the top five to win a PGA golf tournament. Note that the importance value is
-more evenly distribute among those top five in those two models which make sense. However, all models performed relative poorly in the recall score.</p>
+<p>2. it is thougth that the best classification model is a close call between the K-Nearest Neighbor, and Random Forest, However, The former ranked the most widely known important golf player's statistics among the top five to win a PGA golf tournament. Note that the importance value is
+more evenly distribute among those top five in those two models which make sense. However, all models performed relative poorly in the recall score which is expected when dealing with imbalanced dependent target variable.</p>
 <p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc' for the Logistic Regression, and K-Nearest Neighbor, since it works quite well for imbalance data </p>
 <p> 4. The precision-recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
 <p> 5. The most important independent variable was: 'Scoring Average_AVG'  in all models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
