@@ -265,8 +265,8 @@ As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight
 </br>
 </br>
 <p align="center">
-<img src="images/Table_capstone_test.jpeg" width="1000px">
-<h4 align="center"> Table</h4>
+<img src="images/Table_capstone_test.jpeg" width="1200px">
+<h4 align="center"> Table 1</h4>
 </p>
 
 
