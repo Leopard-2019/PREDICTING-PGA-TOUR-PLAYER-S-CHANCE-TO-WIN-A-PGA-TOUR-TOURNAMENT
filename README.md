@@ -97,6 +97,7 @@ A correlation matrix was generated in order to explore how the variables correla
 </p>
 </div>
 
+</br>
 <p text-align-last="start">
 More insight into the dataset can be gained before finalizing the data preparation by showing the values distribution for all independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present. Also, the statistical summary of those independent variables is shown on Figure 10.
 </p>
