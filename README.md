@@ -135,6 +135,7 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 <h4 align="center"> Figure 12. Golf Players who competed in the PGA Tour from 2011-2021</h4>
 </p>
 
+</br>
 <p text-align-last="start">
 A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', SG: Tee-to-Green_AVERAGE', 'Putting Average", and "Scrambling %". An important observation is that the only two categories/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. Although, it is worth to mention that Putting_Average seems to have improved throughout the years, i.e., decreasing.The major reasons behind it are : golf players are more athletic than ever, and equipment/balls technology has dramatically improved throughout the years, specially the last 10 years.
 </p>
