@@ -2,7 +2,7 @@
 <img src="images/Capstone_proj_logo.jpeg" alt="isolated"  width="220px" align="left">
 <h1> PREDICTING PGA TOUR PLAYER'S CHANCE TO WIN A PGA TOUR-TOURNAMENT</h1>
 <p text-align= "right">
-This python application using jupyter notebook predicts the chance of any pga tour player to win a tournament using Logistic Regression,K-Nearest Neighbor, and Random Forest  as a Supervized Machine Learning Algorithms.
+This python application using jupyter notebook predicts the chance of any pga tour player to win a tournament using <strong>Logistic Regression,K-Nearest Neighbor, and Random Forest</strong>  as a Supervized Machine Learning Algorithms.
 </p>
 </div>
 
@@ -118,7 +118,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </div>
 
 <p text-align-last="start">
-The target column, i.e., the dependent variables: "Win" is binary (0=did not win and 1= won), and is clearly imbalaced. it is important to point out that in this analysis 'Win' means a player/players ranked 1st after 4 rounds in a PGA tournament (see Figure 11). Therefore, the playoffs results when players ended up in a tie after final round are not included. In total, there were 831 unique players whom competed from 2011-2021 as shown on Figure 12, i.e, there were many of them who did compete multiple times during the aforementioned time span.
+<strong>The target column, i.e., the dependent variables: "Win" is binary (0=did not win and 1= won), and is clearly imbalaced </strong>. it is important to point out that in this analysis 'Win' means a player/players ranked 1st after 4 rounds in a PGA tournament (see Figure 11). Therefore, the playoffs results when players ended up in a tie after final round are not included. In total, there were 831 unique players whom competed from 2011-2021 as shown on Figure 12, i.e, there were many of them who did compete multiple times during the aforementioned time span.
 </p>
 
 </br>
@@ -191,7 +191,7 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 
 <h2>Modelling</h2>
 <p text-align-last="start">
-It is well known that working with imbalance data is always a challenge for any particular Machine Learning Classification Model. In this particular piece of work, Logistic Regression model was initially chosen as the Supervise Machine Learning Model due to the binary nature of the dependent/target variable (has only 2 outputs), and its capacity to predict the likelihood of events by looking at historical data points. However, as any machine learning algorithm, Logistic Rgression works much better when its hyperparamters are optimized using the appropriate metric. In this particular project, the metric chosen was: 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data. The metric called 'Recall' was tested as scoring to optimize the hyperparamters, but results were not encouraged. The pipeline model used is shown on Figure 18. 
+It is well known that working with imbalanced data is always a challenge for any particular Machine Learning Classification Model. In this particular piece of work, Logistic Regression model was initially chosen as the Supervise Machine Learning Model due to the binary nature of the dependent/target variable (has only 2 outputs), and its capacity to predict the likelihood of events by looking at historical data points. However, as any machine learning algorithm, Logistic Rgression works much better when its hyperparamters are optimized using the appropriate metric. In this particular project, the metric chosen was: 'roc_auc' (the area under the ROC curve), since it works quite well for imbalanced data. The metric called 'Recall' was tested as scoring to optimize the hyperparamters, but results were not encouraged. The pipeline model used is shown on Figure 18. 
 </p>
 
 </br>
@@ -216,7 +216,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 
 <p text-align-last="start">
-As it can observed, the metrics: 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a couple od  different Machiner Learning classification models, in this case: the  K-Nearest Neighbor, and Random Forest.The pipeline models used are shown on Figure 21, and 22. 
+As it can observed, the metrics: 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a couple of different Machiner Learning classification models, in this case: the  K-Nearest Neighbor, and Random Forest.The pipeline models used are shown on Figure 21, and 22. 
 </p>
 
 </br>
@@ -262,7 +262,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 <h2>Evaluation</h2>
 <p text-align-last="start">
-As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 27) also indicates that the best model is the K-Nearest Neighbor (purple line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  was also built as shown on Figure 28. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107 and 103 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12 and 16 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101 and .134 for Logistic regression and  K-Nearest Neighbor respectively). The table 1 shows a summary of the metrics and elapse times for the classification models tested. it is well noted that Random Forest shows superior metrics. But not by a wide margin regarding precision,recall scores, and MSE.
+As it can be observed,  the best model seems to be  Random Forest by slight margin over the K-Nearest Neighbor. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 27) also indicates that the best model is the Random Forest (purple line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  was also built as shown on Figure 28. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107 and 103 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12 and 16 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101 and .134 for Logistic regression and  K-Nearest Neighbor respectively). The table 1 shows a summary of the metrics and elapse times for the classification models tested. it is well noted that Random Forest shows superior metrics. But not by a wide margin regarding precision,recall scores, and MSE.
 </p>
 
 </br>
