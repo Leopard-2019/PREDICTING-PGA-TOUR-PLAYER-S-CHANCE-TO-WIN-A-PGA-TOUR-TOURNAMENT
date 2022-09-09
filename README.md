@@ -35,7 +35,7 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 </br>
 </br>
 <p align="center">
-<img src="images/CapstoneProj_info_2.jpeg" width="500px" height="500px">
+<img src="images/CapstoneProj_info_1.jpeg" width="500px" height="500px">
 <h4 align="center"> Figure 2</h4>
 </p>
 </div>
@@ -64,7 +64,7 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 
 </br>
 <p align="center">
-<img src="images/Capstone_proj_nulls.jpeg" width="900px"  height="500px">
+<img src="images/Capstone_proj_nulls.jpeg" width="400px"  height="450px">
 <h4 align="center"> Figure 5</h4>
 </p>
 </div>
@@ -72,7 +72,7 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 
 </br>
 <p align="center">
-<img src="images/Capstone_proj_info_1.jpeg" width="500px" height="500px">
+<img src="images/CapstoneProj_info_1.jpeg" width="500px" height="500px">
 <h4 align="center"> Figure 6</h4>
 </p>
 </div>
@@ -135,14 +135,15 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 </p>
 
 <p text-align-last="start">
-A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', and 'SG: Tee-to-Green_AVERAGE'. Also note that the difference in 'SG: Putting_AVERAGE' is not significant  between players regardless if they won or did not, indicating that putting is not the most important factor to win or lose a tournament in the PGA tour. This observation will be confirmed when the permutation_importance function is applied later in the analysis. Another important observation is that the only two category/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last 10 years.
+A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', SG: Tee-to-Green_AVERAGE', 'Putting Average", and "Scrambling %". An important observation is that the only two categories/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. The major reasons behind it are : golf players are more athletic than ever, and equipment technology has dramatically improved through the years, specially the last 10 years.
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_box_1.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_2.jpeg" width="1200px" height="800px">
-<img src="images/capstone_proj_box_3.jpeg" width="12000px" height="400px">
+<img src="images/capstone_proj_box_3.jpeg" width="1200px" height="400px">
+<img src="images/capstone_proj_box_4.jpeg" width="800px" height="400px">
 <h4 align="center"> Figure 13</h4>
 </p>
 </div>
@@ -226,7 +227,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 <h2>Evaluation</h2>
 <p text-align-last="start">
-As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 22) also indicates that the best model is the   K-Nearest Neighbor (purple line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  as also built as shown on Figure 23. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament (100 and 97 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (18 and 21 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.153 and .178 for Logistic regression and  K-Nearest Neighbor respectively).
+As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 22) also indicates that the best model is the K-Nearest Neighbor (purple line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  was also built as shown on Figure 23. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107 and 103 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12 and 16 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101 and .134 for Logistic regression and  K-Nearest Neighbor respectively).
 </p>
 
 </br>
@@ -244,7 +245,7 @@ As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight
 </p>
 
 <p text-align-last="start">
-Ranking the the importance of the independent variables that matter in predicting the target variable 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 1 and 2), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables: 'Driving Distance_AVG', and  'Club Head Speed_AVG.' are not within the five most important ones,i.e., indicating that swinging the club faster, and driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf tournaments.
+Ranking the the importance of the independent variables that matter in predicting the target variable 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 1 and 2), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables 'Driving Distance_AVG',  is not within the five most important ones,i.e., indicating that driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green, green in regulation, hit fairway percentage,etc)) seem to be the most important aspects to win PGA golf tournaments.
 </p>
 
 </br>
@@ -265,11 +266,11 @@ Ranking the the importance of the independent variables that matter in predictin
 The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusions & Recomendations</h2>
-<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 20 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
-<p>2. it is thougth that the best classification model is the Logistic Regression, because it is telling the history more clear on which statistics are more imporant to win a PGA tournament, despite the fact that its metrics: precision and recal are a bit lower thant that of the  K-Nearest Neighbor. However, both models performed poorly in the recall score (less that 0.20).</p>
+<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 22 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
+<p>2. It is thougth that the best classification model is the K-Nearest Neighbor, because it is telling the history more clear on which statistics are more imporant to win a PGA tournament. Both models performed poorly in the recall score (less that 0.15).</p>
 <p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
 <p> 4. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
 <p> 5. The most important independent variable was: 'Scoring Average_AVG'  in both models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
-<p> 6. The independent variables: 'Driving Distance_AVG', and  'Club Head Speed_AVG.' are not within the five most important ones,i.e., indicating that swinging the club faster, and driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf.</p>
-<p> 7. Consistency, i.e, shooting low score, and course management (off the tee and around the green) seem to be the most important aspects to win PGA golf tournaments as are obviously expected.
+<p> 6. The independent variables: 'Driving Distance_AVG' isnot within the five most important ones,i.e., indicating that driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf.</p>
+<p> 7. Consistency, i.e, shooting low score, and course management (off the tee and around the green, green in regulation, hit fairway percentage,etc) seem to be the most important aspects to win PGA golf tournaments as are obviously expected.
 <p> 8.The next steps will consist testing ensembles techniques such as bagging and boostingin in order to explore the possibility to increase both Precision and Recall scores, i.e., proving a more robust, powerful, and confident Supervized Machine Learning Classification Model.
