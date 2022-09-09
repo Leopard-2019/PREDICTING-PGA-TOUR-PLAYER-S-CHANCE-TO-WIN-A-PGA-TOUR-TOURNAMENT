@@ -16,7 +16,7 @@ This python application using jupyter notebook predicts the chance of any pga to
 </br>
 <p align="center">
 <img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
-<h4 align="center"> Figure 1. CRISP-DM Process Model</h4>
+<h4 align="center"> Figure 1. CRISP-DM Process Model.</h4>
 </p>
 </div>
 
@@ -65,7 +65,7 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 </br>
 <p align="center">
 <img src="images/Capstone_proj_nulls.jpeg" width="400px"  height="450px">
-<h4 align="center"> Figure 5. Null values present in the input data</h4>
+<h4 align="center"> Figure 5. Null values present in the input data.</h4>
 </p>
 </div>
 
@@ -93,7 +93,7 @@ A correlation matrix was generated in order to explore how the variables correla
 </br>
 <p align="center">
 <img src="images/CapstoneProj_matrixcorrelation.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 8. Correlation matrix</h4>
+<h4 align="center"> Figure 8. Correlation matrix.</h4>
 </p>
 </div>
 
@@ -113,7 +113,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </br>
 <p align="center">
 <img src="images/capstone_proj_stats.jpeg" width="1200px" height="300px" >
-<h4 align="center"> Figure 10.  Yearly Average Statistics for the independent Variables</h4>
+<h4 align="center"> Figure 10.  Yearly Average Statistics for the independent Variables.</h4>
 </p>
 </div>
 
@@ -125,14 +125,14 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 </br>
 <p align="center">
 <img src="images/CapstoneProj_dependvar.jpeg" width="800px" height="600px">
-<h4 align="center"> Figure 11. Histogram Dependent Variable 'Win'</h4>
+<h4 align="center"> Figure 11. Histogram Dependent Variable 'Win'.</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_players.jpeg" width="1000px">
-<h4 align="center"> Figure 12. Golf Players who competed in the PGA Tour from 2011-2021</h4>
+<h4 align="center"> Figure 12. Golf Players who competed in the PGA Tour from 2011-2021.</h4>
 </p>
 
 </br>
@@ -146,7 +146,7 @@ A good understanding on the differences in statistics among the players who won 
 <img src="images/capstone_proj_box_2.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_3.jpeg" width="1200px" height="400px">
 <img src="images/capstone_proj_box_4.jpeg" width="700px" height="400px">
-<h4 align="center"> Figure 13. Boxplot for the independent variables vs. Year coloured by the dependent variable 'Win'</h4>
+<h4 align="center"> Figure 13. Boxplot for the independent variables vs. Year coloured by the dependent variable 'Win'.</h4>
 </p>
 </div>
 
@@ -197,7 +197,7 @@ It is well known that working with imbalance data is always a challenge for any 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 18. Pipeline: Logistic Regression</h4>
+<h4 align="center"> Figure 18. Pipeline: Logistic Regression.</h4>
 </p>
 
 The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 19). The optimum values for those, and the metrics results are shown on Figure 20. 
@@ -205,13 +205,13 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/capstone_proj_param.jpeg" width="1000px">
-<h4 align="center"> Figure 19. GridSearch Parameters: Logistic Regression</h4>
+<h4 align="center"> Figure 19. GridSearch Parameters: Logistic Regression.</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 20. Metrics and Elapse Time: Logistic Regression</h4>
+<h4 align="center"> Figure 20. Metrics and Elapse Time: Logistic Regression.</h4>
 </p>
 
 
@@ -222,13 +222,13 @@ As it can observed, the metrics: 'precision', and 'recall' were not that good, i
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 21. Pipeline: K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 21. Pipeline: K-Nearest Neighbor.</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe_randomforest.jpeg" width="250px">
-<h4 align="center"> Figure 22. Pipeline: Random Forest</h4>
+<h4 align="center"> Figure 22. Pipeline: Random Forest.</h4>
 </p>
 
 <p text-align-last="start">
@@ -238,26 +238,26 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_param.jpeg" width="1000px">
-<h4 align="center"> Figure 23. GridSearch Parameters: K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 23. GridSearch Parameters: K-Nearest Neighbor.</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_param.jpeg" width="1000px">
-<h4 align="center"> Figure 24. GridSearchParameters: Random Forest</h4>
+<h4 align="center"> Figure 24. GridSearchParameters: Random Forest.</h4>
 </p>
 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 25. Metrics and Elapsed Time: K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 25. Metrics and Elapsed Time: K-Nearest Neighbor.</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_metrics.jpeg" width="1100px">
-<h4 align="center"> Figure 26. Metrics and Elapsed Time: Random Forest</h4>
+<h4 align="center"> Figure 26. Metrics and Elapsed Time: Random Forest.</h4>
 </p>
 
 <h2>Evaluation</h2>
@@ -269,21 +269,21 @@ As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight
 </br>
 <p align="center">
 <img src="images/recall_precision_capstone_test.jpeg" width="600px">
-<h4 align="center"> Figure 27. Precision-Recall Curve</h4>
+<h4 align="center"> Figure 27. Precision-Recall Curve.</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/confusion_capstone_test.jpeg" width="1000px">
-<h4 align="center"> Figure 28. Confusion Matrix</h4>
+<h4 align="center"> Figure 28. Confusion Matrix.</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/Table_capstone_test.jpeg" width="1200px">
-<h4 align="center"> Table 1. Summary Metrics and Elapse Times</h4>
+<h4 align="center"> Table 1. Summary Metrics and Elapse Times.</h4>
 </p>
 
 </br>
@@ -295,21 +295,21 @@ Ranking the importance of the independent variables that matter in predicting th
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_1.jpeg" width="500px">
-<h4 align="center"> Table 2. Ranking Independent Variables Importance: Logistic Regression</h4>
+<h4 align="center"> Table 2. Ranking Independent Variables Importance: Logistic Regression.</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_2.jpeg" width="500px">
-<h4 align="center"> Table 3. Ranking Independent Variables Importance: K-Nearest Neighbor</h4>
+<h4 align="center"> Table 3. Ranking Independent Variables Importance: K-Nearest Neighbor.</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm3.jpeg" width="500px">
-<h4 align="center"> Table 4. Ranking Independent Variables Importance: Random Forest</h4>
+<h4 align="center"> Table 4. Ranking Independent Variables Importance: Random Forest.</h4>
 </p>
 
 <h2>Deployment</h2>
