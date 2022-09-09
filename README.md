@@ -51,7 +51,7 @@ As mentioned before, the dataset was scraped from the offical website of the PGA
 
 <h2>Data Preparation</h2>
 <p text-align-last="start">
-All the independent variables are numerical. Before cleaning the dataset, the index was reset, and the column: 'PLAYER NAME' was dropped (see Figure 4), since  the name of the pga players won't be needed, only their statistics for further analysis. The null values were identified as shown on Figures 5, and dropped. The dataset was reduced to 27 columns and  3380 rows as shown on Figure 6. Duplicates was observed in just one row as shown on Figure 7.
+All the independent variables are numerical. Before cleaning the dataset, the index was reset, and the column: 'PLAYER NAME' was dropped (see Figure 4), since  the name of the pga players won't be needed, only their statistics for further analysis. The null values were identified as shown on Figures 5, and dropped. The dataset was reduced to 29 columns and  3379 rows as shown on Figure 6. Duplicates was observed in just one row as shown on Figure 7.
 </p>
   
 </br>
@@ -299,7 +299,7 @@ Ranking the importance of the independent variables that matter in predicting th
 The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusions & Recomendations</h2>
-<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 22 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
+<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 29 columns and  3379. The target columns was "Win" which stands:  ranking first (i.e, Win) in any PGA tournament during the period 2011-2021</p>
 <p>2. it is thougth that the best classification model is  a close call between the K-Nearest Neighbor, and Random Forest, However, The former ranked the most widely known important golf player's statistics among the top five to win a PGA golf tournament. Note that the importance value is
 more evenly distribute among those top five in those two models which make sense. However, all models performed relative poorly in the recall score.</p>
 <p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc' for the Logistic Regression, and K-Nearest Neighbor, since it works quite well for imbalance data </p>
