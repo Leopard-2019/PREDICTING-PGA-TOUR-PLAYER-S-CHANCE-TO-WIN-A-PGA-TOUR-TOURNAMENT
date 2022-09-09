@@ -210,7 +210,7 @@ As it can observed, the metrics: 'precision', and 'recall' were not that good, i
 
 </br>
 <p align="center">
-<img src="images/capstone_proj_pipe_randomforest.jpeg" width="300px">
+<img src="images/capstone_proj_pipe_randomforest.jpeg" width="250px">
 <h4 align="center"> Figure 20</h4>
 </p>
 
