@@ -124,7 +124,7 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 </br>
 <p align="center">
 <img src="images/CapstoneProj_dependvar.jpeg" width="800px" height="600px">
-<h4 align="center"> Figure 11</h4>
+<h4 align="center"> Figure 11. Histogram Dependent Variable 'Win'</h4>
 </p>
 
 </br>
