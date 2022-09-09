@@ -161,6 +161,13 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 14</h4>
 </p>
 
+</br>
+<p align="center">
+<img src="images/" width="500px" height="500px">
+<h4 align="center"> Figure 6</h4>
+</p>
+</div>
+
 
 <h3>Cross-Validation Approach</h3>
 <p text-align-last="start">
