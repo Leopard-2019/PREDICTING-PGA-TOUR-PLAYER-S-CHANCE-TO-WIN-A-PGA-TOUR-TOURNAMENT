@@ -170,7 +170,7 @@ Splitting the dependent variable from the independent variables and assigning th
 
 </br>
 <p align="center">
-<img src="images/capstone_proj_depenvaria.jpeg" width="200px" height="200px">
+<img src="images/capstone_proj_depenvaria.jpeg" width="400px" height="400px">
 <h4 align="center"> Figure 16</h4>
 </p>
 </div>
