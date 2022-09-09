@@ -266,7 +266,7 @@ As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight
 </br>
 <p align="center">
 <img src="images/Table_capstone_test.jpeg" width="1200px">
-<h4 align="center"> Table 1. Summary Metric and Elapse Time</h4>
+<h4 align="center"> Table 1. Summary Metrics and Elapse Time</h4>
 </p>
 
 
