@@ -152,7 +152,7 @@ A good understanding on the differences in statistics among the players who won 
 
 <h3>Splitting the variables</h3>
 <p text-align-last="start">
-Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as shown on Figure 14:
+Splitting the dependent variable from the independent variables and assigning them to y and X respectively was done as shown on Figure 14. In total, 20 columns, and 3379 rows are independent variables, and 1 column, and 3379 rows is the dependent variable as shown on Figures 15, and 16:
 </p>
 
 </br>
