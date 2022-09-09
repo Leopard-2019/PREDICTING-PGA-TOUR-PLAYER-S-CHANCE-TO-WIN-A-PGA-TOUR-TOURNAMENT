@@ -180,7 +180,7 @@ It is well known that working with imbalance data is always a challenge for any 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 16. Pipeline Logistic Regression</h4>
+<h4 align="center"> Figure 16. Pipeline: Logistic Regression</h4>
 </p>
 
 The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 17). The optimum values for those, and the metrics results are shown on Figure 18. 
@@ -188,13 +188,13 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/capstone_proj_param.jpeg" width="1000px">
-<h4 align="center"> Figure 17. Parameters Logistic Regression</h4>
+<h4 align="center"> Figure 17. GridSearch Parameters: Logistic Regression</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 18. Metrics and Elapse Time Logistic Regression</h4>
+<h4 align="center"> Figure 18. Metrics and Elapse Time: Logistic Regression</h4>
 </p>
 
 
@@ -205,13 +205,13 @@ As it can observed, the metrics: 'precision', and 'recall' were not that good, i
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 19. Pipeline K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 19. Pipeline: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe_randomforest.jpeg" width="250px">
-<h4 align="center"> Figure 20. Pipeline Random Forest</h4>
+<h4 align="center"> Figure 20. Pipeline: Random Forest</h4>
 </p>
 
 <p text-align-last="start">
@@ -221,26 +221,26 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_param.jpeg" width="1000px">
-<h4 align="center"> Figure 21. Parameters K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 21. GridSearch Parameters: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_param.jpeg" width="1000px">
-<h4 align="center"> Figure 22. Parameters Random Forest</h4>
+<h4 align="center"> Figure 22. GridSearchParameters: Random Forest</h4>
 </p>
 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 23. Metrics and Elapsed Time K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 23. Metrics and Elapsed Time: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_metrics.jpeg" width="1000px">
-<h4 align="center"> Figure 24. Metrics and Elapsed Time Random Forest</h4>
+<h4 align="center"> Figure 24. Metrics and Elapsed Time: Random Forest</h4>
 </p>
 
 <h2>Evaluation</h2>
