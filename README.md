@@ -27,9 +27,8 @@ The Business goal is  to come up with a supervized machine learning classificati
 
 [Jupiter Notebook used]()
 
-<strong>Note:</strong>The dataset before doing the splitting is provided as followed:
+<strong>Note:</strong>The dataset before doing the data splitting is located in the 'Data_beforedoingsplitting' folder.
 
-[DATASET used]()
 
 <h2>Data Understanding</h2>
 <p text-align-last="start">
