@@ -252,47 +252,47 @@ As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight
 </br>
 <p align="center">
 <img src="images/recall_precision_capstone_test.jpeg" width="600px">
-<h4 align="center"> Figure 25</h4>
+<h4 align="center"> Figure 25. Precision-Recall Curve</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/confusion_capstone_test.jpeg" width="1000px">
-<h4 align="center"> Figure 26</h4>
+<h4 align="center"> Figure 26. Confusion Matrix</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/Table_capstone_test.jpeg" width="1200px">
-<h4 align="center"> Table 1</h4>
+<h4 align="center"> Table 1. Summary Metric and Elapse Time</h4>
 </p>
 
 
 <p text-align-last="start">
-Ranking the the importance of the independent variables that matter in predicting the target variable 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 2, 3 and 4), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables 'Driving Distance_AVG',  is not within the five most important ones,i.e., indicating that driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green, green in regulation, hit fairway percentage,etc)) seem to be the most important aspects to win PGA golf tournaments.
+Ranking the importance of the independent variables that matter in predicting the target variable 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The three  models built were used for the sake of comparison. In those models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 2, 3 and 4), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables 'Driving Distance_AVG',  is not within the five most important ones,i.e., indicating that driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green, green in regulation, hit fairway percentage, scrambling,etc)) seem to be the most important aspects to win PGA golf tournaments.
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_1.jpeg" width="500px">
-<h4 align="center"> Table 2. Logistic Regression</h4>
+<h4 align="center"> Table 2. Ranking Independent Variables Importance: Logistic Regression</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_2.jpeg" width="500px">
-<h4 align="center"> Table 3. K-Nearest Neighbor</h4>
+<h4 align="center"> Table 3.Ranking Independent Variables Importance: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm3.jpeg" width="500px">
-<h4 align="center"> Table 4. Random Forest</h4>
+<h4 align="center"> Table 4. Ranking Independent Variables Importance: Random Forest</h4>
 </p>
 
 <h2>Deployment</h2>
