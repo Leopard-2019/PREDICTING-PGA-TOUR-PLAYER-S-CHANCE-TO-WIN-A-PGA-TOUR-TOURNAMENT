@@ -113,7 +113,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </br>
 <p align="center">
 <img src="images/capstone_proj_stats.jpeg" width="1200px" height="300px" >
-<h4 align="center"> Figure 10</h4>
+<h4 align="center"> Figure 10.  Yearly Average Statistics for the independent Variables</h4>
 </p>
 </div>
 
