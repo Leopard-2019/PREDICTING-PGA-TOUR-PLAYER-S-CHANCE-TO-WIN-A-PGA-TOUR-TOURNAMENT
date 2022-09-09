@@ -80,7 +80,7 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 </br>
 <p align="center">
 <img src="images/cpastone_proj_dup.jpeg" width="800px" height="150px">
-<h4 align="center"> Figure 7</h4>
+<h4 align="center"> Figure 7. Duplicates present in the Dataset.</h4>
 </p>
 </div>
 
