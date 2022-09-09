@@ -105,7 +105,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </br>
 <p align="center">
 <img src="images/CaptsoneProj_distindepvaria_1.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 9. Values distribution for the independent variable used.</h4>
+<h4 align="center"> Figure 9. Values distribution for the independent variables.</h4>
 </p>
 </div>
 
