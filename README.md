@@ -16,7 +16,7 @@ This python application using jupyter notebook predicts the chance of any pga to
 </br>
 <p align="center">
 <img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
-<h4 align="center"> Figure 1</h4>
+<h4 align="center"> Figure 1.CRISP-DM Process Model</h4>
 </p>
 </div>
 
