@@ -199,7 +199,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 
 <p text-align-last="start">
-As it can observed, the metrics: 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a different Machiner Learning classification model, in this case: the  K-Nearest Neighbor.The pipeline model used is shown on Figure 19. 
+As it can observed, the metrics: 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a couple od  different Machiner Learning classification models, in this case: the  K-Nearest Neighbor, and Random Forest.The pipeline models used are shown on Figure 19, and 20. 
 </p>
 
 </br>
@@ -208,58 +208,91 @@ As it can observed, the metrics: 'precision', and 'recall' were not that good, i
 <h4 align="center"> Figure 19</h4>
 </p>
 
+</br>
+<p align="center">
+<img src="images/capstone_proj_pipe_randomforest.jpeg" width="250px">
+<h4 align="center"> Figure 20</h4>
+</p>
+
 <p text-align-last="start">
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 20). The optimum values for those, and the metrics results are shown on Figure 21. It well noticed that the metrics have slightly improved using  K-Nearest Neighbor model.
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figures 21 and 22). The optimum values for those, and the metrics results are shown on Figures 23 and 24. It well noticed that the metrics have slightly improved using  K-Nearest Neighbor, and Random Forest models.
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_param.jpeg" width="1000px">
-<h4 align="center"> Figure 20</h4>
+<h4 align="center"> Figure 21</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_randomforest_param.jpeg" width="1000px">
+<h4 align="center"> Figure 22</h4>
 </p>
 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 21</h4>
+<h4 align="center"> Figure 23</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_randomforest_metrics.jpeg" width="1000px">
+<h4 align="center"> Figure 24</h4>
 </p>
 
 <h2>Evaluation</h2>
 <p text-align-last="start">
-As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 22) also indicates that the best model is the K-Nearest Neighbor (purple line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  was also built as shown on Figure 23. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107 and 103 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12 and 16 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101 and .134 for Logistic regression and  K-Nearest Neighbor respectively).
+As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 25) also indicates that the best model is the K-Nearest Neighbor (purple line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  was also built as shown on Figure 26. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107 and 103 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12 and 16 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101 and .134 for Logistic regression and  K-Nearest Neighbor respectively). The table 1 shows a summary of the metrics and elapse times for the classification models tested. it is well noted that Random Forest shows superior metrics. But not by a wide margin regarding presicion,recall scores, and MSE.
 </p>
 
 </br>
 </br>
 <p align="center">
-<img src="images/capstone_proj_curve.jpeg" width="600px">
-<h4 align="center"> Figure 22</h4>
+<img src="images/recall_precision_capstone_test.jpeg" width="600px">
+<h4 align="center"> Figure 25</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
-<img src="images/capstone_proj_confusion.jpeg" width="1000px">
-<h4 align="center"> Figure 23</h4>
+<img src="images/confusion_capstone_test.jpeg" width="1000px">
+<h4 align="center"> Figure 26</h4>
 </p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Table_capstone_test.jpeg" width="1000px">
+<h4 align="center"> Table</h4>
+</p>
+
 
 <p text-align-last="start">
-Ranking the the importance of the independent variables that matter in predicting the target variable 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 1 and 2), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables 'Driving Distance_AVG',  is not within the five most important ones,i.e., indicating that driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green, green in regulation, hit fairway percentage,etc)) seem to be the most important aspects to win PGA golf tournaments.
+Ranking the the importance of the independent variables that matter in predicting the target variable 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The two  models built were used for the sake of comparison. In both models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 2, 3 and 4), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables 'Driving Distance_AVG',  is not within the five most important ones,i.e., indicating that driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green, green in regulation, hit fairway percentage,etc)) seem to be the most important aspects to win PGA golf tournaments.
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_1.jpeg" width="500px">
-<h4 align="center"> Table 1</h4>
+<h4 align="center"> Table 2</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_2.jpeg" width="500px">
-<h4 align="center"> Table 2</h4>
+<h4 align="center"> Table 3</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/capstone_proj_perm3.jpeg" width="500px">
+<h4 align="center"> Table 4</h4>
 </p>
 
 <h2>Deployment</h2>
@@ -267,10 +300,11 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 
 <h2>Main Conclusions & Recomendations</h2>
 <p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 22 columns and 3256 rows. The target columns was "Win" which stands:  Win in a PGA tournament during the period 2011-2021</p>
-<p>2. It is thougth that the best classification model is the K-Nearest Neighbor, because it is telling the history more clear on which statistics are more imporant to win a PGA tournament. Both models performed poorly in the recall score (less that 0.15).</p>
-<p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
-<p> 4. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
-<p> 5. The most important independent variable was: 'Scoring Average_AVG'  in both models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
-<p> 6. The independent variables: 'Driving Distance_AVG' isnot within the five most important ones,i.e., indicating that driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf.</p>
-<p> 7. Consistency, i.e, shooting low score, and course management (off the tee and around the green, green in regulation, hit fairway percentage,etc) seem to be the most important aspects to win PGA golf tournaments as are obviously expected.
-<p> 8.The next steps will consist testing ensembles techniques such as bagging and boostingin in order to explore the possibility to increase both Precision and Recall scores, i.e., proving a more robust, powerful, and confident Supervized Machine Learning Classification Model.
+<p>2. it is thougth that the best classification model is the K-Nearest Neighbor, because it ranked the most widely known important player's statistics among the top five to win a PGA golf tournament. Also,the importance value is
+more evenly distribute among those top five, which make sense.However, all models performed relative poorly in the recall score.</p>
+<p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc' for the Logistic Regression, and K-Nearest Neighbor, since it works quite well for imbalance data </p>
+<p> 4. The precision-recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
+<p> 5. The most important independent variable was: 'Scoring Average_AVG'  in all models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
+<p> 6. The independent variables: 'Driving Distance_AVG' is not within the five most important ones,i.e., indicating that  driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf.</p>
+<p> 7. Consistency, i.e, shooting low score, and course management (off the tee,around the green, scrambling,etc) seem to be the most important aspects to win PGA golf tournaments as are obviously expected.
+<p> 8.The Random Forest model was tested to explore the possibility of increasing the values obtained for the metrics,in particular the Recall Score. However, the improvement obtained was not as good as expected.
