@@ -178,104 +178,104 @@ Splitting the dependent variable from the independent variables and assigning th
 
 <h3>Cross-Validation Approach</h3>
 <p text-align-last="start">
-Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as shown on Figure 15:
+Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as shown on Figure 17:
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_cross.jpeg" width="1000px">
-<h4 align="center"> Figure 15</h4>
+<h4 align="center"> Figure 17</h4>
 </p>
 
 <h2>Modelling</h2>
 <p text-align-last="start">
-It is well known that working with imbalance data is always a challenge for any particular Machine Learning Classification Model. In this particular piece of work, Logistic Regression model was initially chosen as the Supervise Machine Learning Model due to the binary nature of the dependent/target variable (has only 2 outputs), and its capacity to predict the likelihood of events by looking at historical data points. However, as any machine learning algorithm, Logistic Rgression works much better when its hyperparamters are optimized using the appropriate metric. In this particular project, the metric chosen was: 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data. The metric called 'Recall' was tested as scoring to optimize the hyperparamters, but results were not encouraged. The pipeline model used is shown on Figure 16. 
+It is well known that working with imbalance data is always a challenge for any particular Machine Learning Classification Model. In this particular piece of work, Logistic Regression model was initially chosen as the Supervise Machine Learning Model due to the binary nature of the dependent/target variable (has only 2 outputs), and its capacity to predict the likelihood of events by looking at historical data points. However, as any machine learning algorithm, Logistic Rgression works much better when its hyperparamters are optimized using the appropriate metric. In this particular project, the metric chosen was: 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data. The metric called 'Recall' was tested as scoring to optimize the hyperparamters, but results were not encouraged. The pipeline model used is shown on Figure 18. 
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 16. Pipeline: Logistic Regression</h4>
+<h4 align="center"> Figure 18. Pipeline: Logistic Regression</h4>
 </p>
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 17). The optimum values for those, and the metrics results are shown on Figure 18. 
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 19). The optimum values for those, and the metrics results are shown on Figure 20. 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_param.jpeg" width="1000px">
-<h4 align="center"> Figure 17. GridSearch Parameters: Logistic Regression</h4>
+<h4 align="center"> Figure 19. GridSearch Parameters: Logistic Regression</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 18. Metrics and Elapse Time: Logistic Regression</h4>
+<h4 align="center"> Figure 20. Metrics and Elapse Time: Logistic Regression</h4>
 </p>
 
 
 <p text-align-last="start">
-As it can observed, the metrics: 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a couple od  different Machiner Learning classification models, in this case: the  K-Nearest Neighbor, and Random Forest.The pipeline models used are shown on Figure 19, and 20. 
+As it can observed, the metrics: 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a couple od  different Machiner Learning classification models, in this case: the  K-Nearest Neighbor, and Random Forest.The pipeline models used are shown on Figure 21, and 22. 
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 19. Pipeline: K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 21. Pipeline: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe_randomforest.jpeg" width="250px">
-<h4 align="center"> Figure 20. Pipeline: Random Forest</h4>
+<h4 align="center"> Figure 22. Pipeline: Random Forest</h4>
 </p>
 
 <p text-align-last="start">
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figures 21 and 22). The optimum values for those, and the metrics results are shown on Figures 23 and 24. It well noticed that the metrics have slightly improved using  K-Nearest Neighbor, and Random Forest models.
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figures 23 and 24). The optimum values for those, and the metrics results are shown on Figures 25 and 26. It well noticed that the metrics have slightly improved using  K-Nearest Neighbor, and Random Forest models.
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_param.jpeg" width="1000px">
-<h4 align="center"> Figure 21. GridSearch Parameters: K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 23. GridSearch Parameters: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_param.jpeg" width="1000px">
-<h4 align="center"> Figure 22. GridSearchParameters: Random Forest</h4>
+<h4 align="center"> Figure 24. GridSearchParameters: Random Forest</h4>
 </p>
 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 23. Metrics and Elapsed Time: K-Nearest Neighbor</h4>
+<h4 align="center"> Figure 25. Metrics and Elapsed Time: K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_metrics.jpeg" width="1100px">
-<h4 align="center"> Figure 24. Metrics and Elapsed Time: Random Forest</h4>
+<h4 align="center"> Figure 26. Metrics and Elapsed Time: Random Forest</h4>
 </p>
 
 <h2>Evaluation</h2>
 <p text-align-last="start">
-As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 25) also indicates that the best model is the K-Nearest Neighbor (purple line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  was also built as shown on Figure 26. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107 and 103 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12 and 16 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101 and .134 for Logistic regression and  K-Nearest Neighbor respectively). The table 1 shows a summary of the metrics and elapse times for the classification models tested. it is well noted that Random Forest shows superior metrics. But not by a wide margin regarding precision,recall scores, and MSE.
+As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight margin over the Logistic Regression. The precision- recall curve was decided to use, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 27) also indicates that the best model is the K-Nearest Neighbor (purple line). It also did consume less elapsed time than that of Logistic Regression. The confusion matrix  was also built as shown on Figure 28. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107 and 103 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12 and 16 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101 and .134 for Logistic regression and  K-Nearest Neighbor respectively). The table 1 shows a summary of the metrics and elapse times for the classification models tested. it is well noted that Random Forest shows superior metrics. But not by a wide margin regarding precision,recall scores, and MSE.
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/recall_precision_capstone_test.jpeg" width="600px">
-<h4 align="center"> Figure 25. Precision-Recall Curve</h4>
+<h4 align="center"> Figure 27. Precision-Recall Curve</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/confusion_capstone_test.jpeg" width="1000px">
-<h4 align="center"> Figure 26. Confusion Matrix</h4>
+<h4 align="center"> Figure 28. Confusion Matrix</h4>
 </p>
 
 </br>
