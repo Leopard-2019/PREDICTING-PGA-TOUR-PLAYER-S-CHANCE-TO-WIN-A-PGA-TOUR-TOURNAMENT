@@ -302,7 +302,7 @@ Ranking the importance of the independent variables that matter in predicting th
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_2.jpeg" width="500px">
-<h4 align="center"> Table 3.Ranking Independent Variables Importance: K-Nearest Neighbor</h4>
+<h4 align="center"> Table 3. Ranking Independent Variables Importance: K-Nearest Neighbor</h4>
 </p>
 
 </br>
