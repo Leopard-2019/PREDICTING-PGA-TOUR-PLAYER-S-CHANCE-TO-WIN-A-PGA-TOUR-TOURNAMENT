@@ -188,13 +188,13 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/capstone_proj_param.jpeg" width="1000px">
-<h4 align="center"> Figure 17</h4>
+<h4 align="center"> Figure 17. Logistic Regression</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 18</h4>
+<h4 align="center"> Figure 18. Logisto Regression</h4>
 </p>
 
 
@@ -205,13 +205,13 @@ As it can observed, the metrics: 'precision', and 'recall' were not that good, i
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_pipe.jpeg" width="250px">
-<h4 align="center"> Figure 19</h4>
+<h4 align="center"> Figure 19. K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_pipe_randomforest.jpeg" width="250px">
-<h4 align="center"> Figure 20</h4>
+<h4 align="center"> Figure 20. Random Forest</h4>
 </p>
 
 <p text-align-last="start">
@@ -221,26 +221,26 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_param.jpeg" width="1000px">
-<h4 align="center"> Figure 21</h4>
+<h4 align="center"> Figure 21. K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_param.jpeg" width="1000px">
-<h4 align="center"> Figure 22</h4>
+<h4 align="center"> Figure 22. Random Forest</h4>
 </p>
 
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_model2_metric.jpeg" width="1000px">
-<h4 align="center"> Figure 23</h4>
+<h4 align="center"> Figure 23. K-Nearest Neighbor</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/capstone_proj_randomforest_metrics.jpeg" width="1000px">
-<h4 align="center"> Figure 24</h4>
+<h4 align="center"> Figure 24. Random Forest</h4>
 </p>
 
 <h2>Evaluation</h2>
@@ -278,21 +278,21 @@ Ranking the the importance of the independent variables that matter in predictin
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_1.jpeg" width="500px">
-<h4 align="center"> Table 2 Logistic Regression</h4>
+<h4 align="center"> Table 2. Logistic Regression</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_2.jpeg" width="500px">
-<h4 align="center"> Table 3 K-Nearest Neighbor</h4>
+<h4 align="center"> Table 3. K-Nearest Neighbor</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm3.jpeg" width="500px">
-<h4 align="center"> Table 4 Random Forest</h4>
+<h4 align="center"> Table 4. Random Forest</h4>
 </p>
 
 <h2>Deployment</h2>
