@@ -29,7 +29,7 @@ The Business goal is  to come up with a supervized machine learning classificati
 
 <h2>Data Understanding</h2>
 <p text-align-last="start">
-As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it originally consists of 29 columns and 4122 rows as shown on Figure 2. it is important to mention that the statistics were averaged yearly for each player. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicates winning or not winning a PGA tournament during the aforementioned time span.
+As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it originally consists of 29 columns and 4122 rows as shown on Figure 2. it is important to mention that the statistics were averaged yearly for each player. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicates winning (=1) or not winning (=0) a PGA tournament during the aforementioned time span.
 </p>
 
 </br>
@@ -137,7 +137,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 
 </br>
 <p text-align-last="start">
-A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', SG: Tee-to-Green_AVERAGE', 'Putting Average", and "Scrambling %". An important observation is that the only two categories/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. Although, it is worth to mention that Putting_Average seems to have improved throughout the years, i.e., decreasing.The major reasons behind it are : golf players are more athletic than ever, and equipment/balls technology has dramatically improved throughout the years, specially the last 10 years.
+A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', SG: Tee-to-Green_AVERAGE', 'Putting Average", and "Scrambling %". <strong>An important observation is that the only two categories/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. Although, it is worth to mention that Putting_Average seems to have improved throughout the years, i.e., decreasing </strong>.The major reasons behind it are : golf players are more athletic than ever, and equipment/balls technology has dramatically improved throughout the years, specially the last 10 years.
 </p>
 
 </br>
@@ -216,7 +216,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 
 <p text-align-last="start">
-As it can observed, the metrics: 'precision', and 'recall' were not that good, in particular the last one, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a couple of different Machiner Learning classification models, in this case: the  K-Nearest Neighbor, and Random Forest.The pipeline models used are shown on Figure 21, and 22. 
+As it can observed, the metrics: 'precision', and 'recall' were not that good, in particular the last one,which is typical for imbalanced data, meaning that the proportion of False  Negatives (FN): the model incorrectly predicts a player most likely will lose  a tournament to True Positives (TP):the model correctly predicts a player will likely win a tournament is too high, making the recall score way too low as it will be seen visually in the confusion matrix later. As a result, it was decided to test a couple of different Machiner Learning classification models, in this case: the  K-Nearest Neighbor, and Random Forest.The pipeline models used are shown on Figure 21, and 22. 
 </p>
 
 </br>
@@ -232,7 +232,7 @@ As it can observed, the metrics: 'precision', and 'recall' were not that good, i
 </p>
 
 <p text-align-last="start">
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figures 23 and 24). The optimum values for those, and the metrics results are shown on Figures 25 and 26. It well noticed that the metrics have slightly improved using  K-Nearest Neighbor, and Random Forest models.
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figures 23 and 24). The optimum values for those, and the metrics results are shown on Figures 25 and 26. It is well noticed that the metrics have slightly improved using  K-Nearest Neighbor, and Random Forest models.
 </p>
 
 </br>
@@ -262,7 +262,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 <h2>Evaluation</h2>
 <p text-align-last="start">
-As it can be observed,  the best model seems to be  Random Forest by slight margin over the K-Nearest Neighbor. The precision- recall curve was decided to be used, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 27) also indicates that the best model is the Random Forest (green line). The major drawback is that consumed a much significant  elapsed time than that of the other two models, and also the improvement in metrics (Precision, Recal, and MSE) was somewhat small (see Table 1). The confusion matrix  was also built as shown on Figure 28. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107, 103, and 101 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12,16, and 18 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101,.134, and 0.151 for Logistic regression,K-Nearest Neighbor, and Random Forest respectively).
+As it can be observed,  the best model seems to be  Random Forest by slight margin over the K-Nearest Neighbor. The precision- recall curve was decided to be used, since this type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve (see figure 27) also indicates that the best model is the Random Forest (green line) by slight margin. However, the major drawback to be emphatically named the best model is that consumed a much significant elapsed time than that of the other two models, and also the improvement in metrics (Precision, Recal, and MSE) was somewhat small (see Table 1). As a result, it is thought that <strong>K-Nearest Neighbor must be pointed as the best model </strong>.The confusion matrix  was also built as shown on Figure 28. It is thought that  decreasing the False  Negatives (FN): the model incorrectly predicts a player will most likely lose  a tournament (107, 103, and 101 in each model),and increasing True Positives (TP):the model correctly predicts a player will likely win a tournament (12,16, and 18 in each model), i.e. improving recall score is of paramount importance, since it will help to more correctly assign odd to players for betting purpose for instance, o more plainly said, predict in a more confident and robust way who will win a PGA tournament. Unfortunately, both models performed fairly poor in the Recal score (.101,.134, and 0.151 for Logistic regression,K-Nearest Neighbor, and Random Forest respectively).
 </p>
 
 </br>
