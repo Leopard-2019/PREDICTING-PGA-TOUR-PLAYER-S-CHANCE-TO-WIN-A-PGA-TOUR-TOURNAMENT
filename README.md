@@ -286,7 +286,7 @@ As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight
 <h4 align="center"> Table 1. Summary Metrics and Elapse Times</h4>
 </p>
 
-
+</br>
 <p text-align-last="start">
 Ranking the importance of the independent variables that matter in predicting the target variable 'Win' can be done using the  tool permutation.importance (the results were filtered to only leave the columns with the importance greater than 0). The three  models built were used for the sake of comparison. In those models the independent variable: 'Scoring Average_AVG' ranked first, which makes sense (see Tables 2, 3 and 4), since players win tournament by shooting the lowest scoring average. However, it is interesting that this variable is much more important in the Logistic Regression Model. Also note that in both models, the variables 'Driving Distance_AVG',  is not within the five most important ones,i.e., indicating that driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf. Consistency, i.e, shooting low score, and course management (off the tee and around the green, green in regulation, hit fairway percentage, scrambling,etc)) seem to be the most important aspects to win PGA golf tournaments.
 </p>
