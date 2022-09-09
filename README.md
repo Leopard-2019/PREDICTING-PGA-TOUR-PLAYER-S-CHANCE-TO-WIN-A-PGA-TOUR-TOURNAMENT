@@ -132,7 +132,7 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 </br>
 <p align="center">
 <img src="images/capstone_proj_players.jpeg" width="1000px">
-<h4 align="center"> Figure 12. Statistics of the Independent Variables</h4>
+<h4 align="center"> Figure 12. Golf Players who competed in the PGA Tour from 2011-2021</h4>
 </p>
 
 <p text-align-last="start">
