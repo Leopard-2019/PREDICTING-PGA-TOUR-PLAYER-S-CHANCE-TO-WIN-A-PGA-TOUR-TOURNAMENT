@@ -278,21 +278,21 @@ Ranking the the importance of the independent variables that matter in predictin
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_1.jpeg" width="500px">
-<h4 align="center"> Table 2</h4>
+<h4 align="center"> Table 2 Logistic Regression</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm_2.jpeg" width="500px">
-<h4 align="center"> Table 3</h4>
+<h4 align="center"> Table 3 K-Nearest Neighbor</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_perm3.jpeg" width="500px">
-<h4 align="center"> Table 4</h4>
+<h4 align="center"> Table 4 Random Forest</h4>
 </p>
 
 <h2>Deployment</h2>
