@@ -164,7 +164,14 @@ Splitting the dependent variable from the independent variables and assigning th
 </br>
 <p align="center">
 <img src="images/capstone_proj_info_indepvaria.jpeg" width="500px" height="500px">
-<h4 align="center"> Figure 6</h4>
+<h4 align="center"> Figure 15</h4>
+</p>
+</div>
+
+</br>
+<p align="center">
+<img src="images/capstone_proj_depenvaria.jpeg" width="500px" height="500px">
+<h4 align="center"> Figure 16</h4>
 </p>
 </div>
 
@@ -308,7 +315,7 @@ Ranking the importance of the independent variables that matter in predicting th
 The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusions & Recomendations</h2>
-<p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 29 columns and  3379. The target columns was "Win" which stands:  ranking first (i.e, Win) in any PGA tournament during the period 2011-2021</p>
+<p>1. The final dataset used as input for the modeling, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 21 columns and  3379 row for the independent variables (20 for independent varibales, and 1 for dependent variable). The target columns was "Win" which stands:  ranking first (i.e, Win) in any PGA tournament during the period 2011-2021</p>
 <p>2. It is thougth that the best classification model is a close call between the K-Nearest Neighbor, and Random Forest which ranks first in all metrics. However, the former ranked the most widely known important golf player's statistics among the top five to win a PGA golf tournament. Note that the importance value is more evenly distributed among those top five in those two models which make sense. However, all models performed relative poorly in the recall score, which is expected when dealing with a imbalanced dependent target variable.</p>
 <p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc' for the Logistic Regression, and K-Nearest Neighbor, since it works quite well for imbalance data </p>
 <p> 4. The precision-recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
