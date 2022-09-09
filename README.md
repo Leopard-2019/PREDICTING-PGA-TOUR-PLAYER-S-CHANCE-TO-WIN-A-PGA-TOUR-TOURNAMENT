@@ -93,7 +93,7 @@ A correlation matrix was generated in order to explore how the variables correla
 </br>
 <p align="center">
 <img src="images/CapstoneProj_matrixcorrelation.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 8</h4>
+<h4 align="center"> Figure 8. Correlation matrix</h4>
 </p>
 </div>
 
@@ -104,7 +104,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </br>
 <p align="center">
 <img src="images/CaptsoneProj_distindepvaria_1.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 9</h4>
+<h4 align="center"> Figure 9. Values distribution for the independent variable used.</h4>
 </p>
 </div>
 
