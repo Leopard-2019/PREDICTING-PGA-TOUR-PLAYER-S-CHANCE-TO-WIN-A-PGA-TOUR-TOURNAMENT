@@ -16,7 +16,7 @@ This python application using jupyter notebook predicts the chance of any pga to
 </br>
 <p align="center">
 <img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
-<h4 align="center"> Figure 1</h4>
+<h4 align="center"> Figure 1. CRISP-DM Process Model</h4>
 </p>
 </div>
 
@@ -29,7 +29,7 @@ The Business goal is  to come up with a supervized machine learning classificati
 
 <h2>Data Understanding</h2>
 <p text-align-last="start">
-As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it originally consists of 27 columns and 4122 rows as shown on Figure 2. it is important to mention that the statistics were averaged yearly for each player. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicates winning or not winning a PGA tournament during the aforementioned time span.
+As mentioned before, the dataset was scraped from the offical website of the PGA Tour, covering only ten years span of turnaments (2011-2021) in this particular case. it originally consists of 29 columns and 4122 rows as shown on Figure 2. it is important to mention that the statistics were averaged yearly for each player. The target/dependent columns is "Win" which is binary (0=did not win and 1 = won). This variable is imbalanced as will be seen later, and basically indicates winning or not winning a PGA tournament during the aforementioned time span.
 </p>
 
 </br>
@@ -65,7 +65,7 @@ All the independent variables are numerical. Before cleaning the dataset, the in
 </br>
 <p align="center">
 <img src="images/Capstone_proj_nulls.jpeg" width="400px"  height="450px">
-<h4 align="center"> Figure 5</h4>
+<h4 align="center"> Figure 5. Null values present in the input data</h4>
 </p>
 </div>
 
@@ -93,10 +93,11 @@ A correlation matrix was generated in order to explore how the variables correla
 </br>
 <p align="center">
 <img src="images/CapstoneProj_matrixcorrelation.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 8</h4>
+<h4 align="center"> Figure 8. Correlation matrix</h4>
 </p>
 </div>
 
+</br>
 <p text-align-last="start">
 More insight into the dataset can be gained before finalizing the data preparation by showing the values distribution for all independent variables as shown on Figure 9. As it can be observed, all of them show a quite nice normal distribution. Also, it is evident that there are no outliers present. Also, the statistical summary of those independent variables is shown on Figure 10.
 </p>
@@ -104,7 +105,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </br>
 <p align="center">
 <img src="images/CaptsoneProj_distindepvaria_1.jpeg" width="900px" height="800px">
-<h4 align="center"> Figure 9</h4>
+<h4 align="center"> Figure 9. Values distribution for the independent variables.</h4>
 </p>
 </div>
 
@@ -112,7 +113,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 </br>
 <p align="center">
 <img src="images/capstone_proj_stats.jpeg" width="1200px" height="300px" >
-<h4 align="center"> Figure 10</h4>
+<h4 align="center"> Figure 10.  Yearly Average Statistics for the independent Variables</h4>
 </p>
 </div>
 
@@ -124,18 +125,19 @@ The target column, i.e., the dependent variables: "Win" is binary (0=did not win
 </br>
 <p align="center">
 <img src="images/CapstoneProj_dependvar.jpeg" width="800px" height="600px">
-<h4 align="center"> Figure 11</h4>
+<h4 align="center"> Figure 11. Histogram Dependent Variable 'Win'</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/capstone_proj_players.jpeg" width="1000px">
-<h4 align="center"> Figure 12</h4>
+<h4 align="center"> Figure 12. Golf Players who competed in the PGA Tour from 2011-2021</h4>
 </p>
 
+</br>
 <p text-align-last="start">
-A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', SG: Tee-to-Green_AVERAGE', 'Putting Average", and "Scrambling %". An important observation is that the only two categories/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. Although, Putting_Average has more less consistently decreased in the aforementioned period.The major reasons behind it are : golf players are more athletic than ever, and equipment/balls technology has dramatically improved through the years, specially the last 10 years.
+A good understanding on the differences in statistics among the players who won and the ones who did not throughout the years (2011-2021) can be obtained using boxplots: independent variables vs. years, using the dependent variable: 'Win'  for colour encoding as seen on Figure 13. It can be seen that the players who won performed much better in all the categories/statistics, in particular the follow ones:  'Scoring Average_AVG', 'Driving Distance_AVG', '  Club Head Speed_AVG.', 'SG: Off-the-Tee_TOTAL SG:OTT', ' SG: Approach the Green_TOTAL SG:APP', SG: Tee-to-Green_AVERAGE', 'Putting Average", and "Scrambling %". An important observation is that the only two categories/statistics have greatly improved through the years: 'Driving Distance_AVG', and '  Club Head Speed_AVG.'. Although, it is worth to mention that Putting_Average seems to have improved throughout the years, i.e., decreasing.The major reasons behind it are : golf players are more athletic than ever, and equipment/balls technology has dramatically improved throughout the years, specially the last 10 years.
 </p>
 
 </br>
@@ -143,8 +145,8 @@ A good understanding on the differences in statistics among the players who won 
 <img src="images/capstone_proj_box_1.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_2.jpeg" width="1200px" height="800px">
 <img src="images/capstone_proj_box_3.jpeg" width="1200px" height="400px">
-<img src="images/capstone_proj_box_4.jpeg" width="800px" height="400px">
-<h4 align="center"> Figure 13</h4>
+<img src="images/capstone_proj_box_4.jpeg" width="700px" height="400px">
+<h4 align="center"> Figure 13. Boxplot for the independent variables vs. Year coloured by the dependent variable 'Win'</h4>
 </p>
 </div>
 
@@ -158,6 +160,13 @@ Splitting the dependent variable from the independent variables and assigning th
 <img src="images/capstone_proj_split.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
+
+</br>
+<p align="center">
+<img src="images/" width="500px" height="500px">
+<h4 align="center"> Figure 6</h4>
+</p>
+</div>
 
 
 <h3>Cross-Validation Approach</h3>
@@ -239,7 +248,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/capstone_proj_randomforest_metrics.jpeg" width="1000px">
+<img src="images/capstone_proj_randomforest_metrics.jpeg" width="1100px">
 <h4 align="center"> Figure 24. Metrics and Elapsed Time: Random Forest</h4>
 </p>
 
@@ -266,7 +275,7 @@ As it can be observed,  the best model seems to be  K-Nearest Neighbor by slight
 </br>
 <p align="center">
 <img src="images/Table_capstone_test.jpeg" width="1200px">
-<h4 align="center"> Table 1. Summary Metric and Elapse Time</h4>
+<h4 align="center"> Table 1. Summary Metrics and Elapse Times</h4>
 </p>
 
 
@@ -300,8 +309,7 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 
 <h2>Main Conclusions & Recomendations</h2>
 <p>1. The final dataset, after cleaning (there was not need to remove outliers), dropping unnecessary columns consists of 29 columns and  3379. The target columns was "Win" which stands:  ranking first (i.e, Win) in any PGA tournament during the period 2011-2021</p>
-<p>2. it is thougth that the best classification model is a close call between the K-Nearest Neighbor, and Random Forest, However, The former ranked the most widely known important golf player's statistics among the top five to win a PGA golf tournament. Note that the importance value is
-more evenly distribute among those top five in those two models which make sense. However, all models performed relative poorly in the recall score which is expected when dealing with imbalanced dependent target variable.</p>
+<p>2. It is thougth that the best classification model is a close call between the K-Nearest Neighbor, and Random Forest which ranks first in all metrics. However, the former ranked the most widely known important golf player's statistics among the top five to win a PGA golf tournament. Note that the importance value is more evenly distributed among those top five in those two models which make sense. However, all models performed relative poorly in the recall score, which is expected when dealing with a imbalanced dependent target variable.</p>
 <p> 3. The metric used to estimate the optimum parameters for each model was 'roc_auc' for the Logistic Regression, and K-Nearest Neighbor, since it works quite well for imbalance data </p>
 <p> 4. The precision-recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
 <p> 5. The most important independent variable was: 'Scoring Average_AVG'  in all models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
