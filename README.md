@@ -325,7 +325,9 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 <p> 4. The precision-recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
 <p> 5. The most important independent variable was: 'Scoring Average_AVG'  in all models tested. However, it is interesting that this variable is much more important in the Logistic Regression Model</p>
 <p> 6. The independent variables: 'Driving Distance_AVG' is not within the five most important ones,i.e., indicating that  driving the ball longer do not guarantee  that a player will win a tournament. This is a pretty interesting observation that sometimes is overlooked by people who want to initiate their career in golf.</p>
-<p> 7. Consistency, i.e, shooting low score, and course management (off the tee,around the green, scrambling,etc) seem to be the most important aspects to win PGA golf tournaments.
-<p> 8. The Random Forest model was tested to explore the possibility of increasing the values obtained for the metrics,in particular the Recall Score. However, the improvement obtained was not as good as expected.
-<p> 9. The notebook attached can be perfectly used to help assign odds to players when competing in any given PGA tournament. To do this, the user only need to collect the latest player's statistics before entering the PGA tournament. Recall that the statistics collected need to be the same categories used during the modeling phase in this project.
+<p> 7. Consistency, i.e, shooting low score, and course management (off the tee,around the green, scrambling,etc) seem to be the most important aspects to win PGA golf tournaments.</p>
+<p> 8. The Random Forest model was tested to explore the possibility of increasing the values obtained for the metrics,in particular the Recall Score. However, the improvement obtained was not as good as expected.</p>
+<p> 9. The notebook attached can be perfectly used to help assign odds to players when competing in any given PGA tournament. To do this, the user only need to collect the latest player's statistics before entering the PGA tournament. Recall that the statistics collected need to be the same categories used during the modeling phase in this project.</p>
 <p> 10. The potencial user can use the statistics from 1980 is desired, and update the model by just using the notebook that has been attached.
+<p> 11. Neural Network as classification technique is recommended to  be tested.</p>
+
