@@ -25,7 +25,7 @@ This python application using jupyter notebook predicts the chance of any pga to
 The Business goal is  to come up with a supervized machine learning classification model, in this particular case, Logistic Regression was initially chosen, but  K-Nearest Neighbor, and Random Forest were also tested. The output is  binary, meaning that a player must get 1 to have high chance to win, or 0 to have very small/zero chance to win a PGA tournament.The dataset was obtained by doing web scraping in the offical website of the PGA Tour (https://www.pgatour.com/stats), which contained the statistics collected from the tournaments played since 1980. In this particular application, the statistics used were from 2011-2021, i.e., covering only 10 years span. However, the potential user can easily covered the completed span (1980-2022) is desired by using the jupyter notebook attached.
 </p>
 
-[Jupiter Notebook used]()
+[Jupiter Notebook used](https://github.com/Leopard-2019/PREDICTING-PGA-TOUR-PLAYER-S-CHANCE-TO-WIN-A-PGA-TOUR-TOURNAMENT/blob/main/notebook/Capstone_Project_Data-Copy1.ipynb)
 
 <strong>Note:</strong>The dataset before doing the data splitting is located in the folder: 'Data_beforedoingsplitting'.
 
