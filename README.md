@@ -279,7 +279,7 @@ As it can be observed,  the best model seems to be  Random Forest by slight marg
 </br>
 <p align="center">
 <img src="images/Table_capstone_test.jpeg" width="1200px">
-<h4 align="center"> Table 1. Summary Metrics and Elapse Times.</h4>
+<h4 align="center"> Table 1. Summary Metrics and Elapsed Times.</h4>
 </p>
 
 </br>
