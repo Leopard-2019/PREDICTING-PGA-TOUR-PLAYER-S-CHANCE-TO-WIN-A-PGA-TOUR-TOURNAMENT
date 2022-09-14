@@ -329,5 +329,5 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 <p> 8. The Random Forest model was tested to explore the possibility of increasing the values obtained for the metrics,in particular the Recall Score. However, the improvement obtained was not as good as expected.</p>
 <p> 9. The notebook attached can be perfectly used to help assign odds to players when competing in any given PGA tournament. To do this, the user only need to collect the latest player's statistics before entering the PGA tournament. Recall that the statistics collected need to be the same categories used during the modeling phase in this project.</p>
 <p> 10. The potencial user can use the statistics from 1980 is desired, and update the model by just using the notebook that has been attached.
-<p> 11. Neural Network as classification technique is recommended to  be tested.</p>
+<p> 11. Neural Network as a classification technique is recommended to  be tested.</p>
 
